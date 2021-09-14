@@ -48,4 +48,4 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 
 1. [Magni support](https://learn.ubiquityrobotics.com/)
 
-You may visit the [Ubiquity Robotics Forum](https://forum.ubiquityrobotics.com) for assistance or more information and tips
+You may visit the [Ubiquity Robotics Forum](https://forum.ubiquityrobotics.com) for assistance or more information and tips.
