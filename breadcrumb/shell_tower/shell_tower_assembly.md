@@ -11,15 +11,9 @@ author: Janez Cimerman, Kristjan Povše
 
 ### Before you begin: 
 
-<!-- Assummed for shipping:
- - robot base will be shipped separately to the customer directly from the manufacturer (it has onboard the sonars, camera and RPI that are going to be mentioned in this tutorial - so they are not in the parts BOM here)
- - LIDAR and its cable will be shipped directly from the manufacturer to the client
- - Touchscreen will be shipped from Amazon to the customer directly
--->
-
 a) The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables to prevent any short circuits to the main PCB board – named MCB. To turn off the robot with the provided main switches is not enough.
 
-b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times, just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or anSSH connection to shut it down and then cut the power.
+b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times, just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or an SSH connection to shut it down and then cut the power.
 
 c) Screw types used and their names in the instructions:
 
@@ -39,10 +33,6 @@ If you prefer to watch a assembly video, follow the links below:
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
 
     ![Base Robot Without The Camera](https://user-images.githubusercontent.com/53408077/127979241-25dc71c2-dab8-4a5d-acd6-eb58c3729061.jpg)
-
-
-
-
 
 2. Connect the LIDAR molex power connector like shown - INTO THE LEFT MOLEX CONNECTOR and the LAN cable into the RPI LAN port.
 
@@ -70,12 +60,9 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Lidar Holder](lidar_holder.jpg)
 
-
 5. Put the shell on the robot.
 
     ![Shell On Robot](shell_on_robot.png)
-
-
 
 6. Connect the shell switches into the switch board – emergency button behind the red switch and square shell switch behind the black one (CABLE COLORS MAY VARY).
 
@@ -186,50 +173,34 @@ In this section it is shown how to assemble the Tower
         sudo nano /etc/ubiquity/robot.yaml
     
     And the lidar position should be changed to the proper one. In this tutorial the lidar was mounted on the left side of the shell. Position of the camera should be downward
-    
-        # Robot Configuration
-        raspicam: {'position' : 'downward'} # possible: ahead, downward, upward, forward
+
         lidar: {'position' : 'shell_left'} # possible: none, top_plate, shell_left, shell_right, shell_center, tower_center
-        
-        sonars: None# 
-        sonars: 'pi_sonar_v1' 
-        
-        # Use this to enable sonars
-        enable_imu_odom_fusion: false # possible: true, false
-
-<!-- TODO recheck if this robot.yaml is correct -->
 
 
-7.  You can now reconnect the battery with the red connector, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector.
-
-<!-- TODO A video of the unboxing process is available:  [Video](TODO) -->
-
-<!-- TODO ### Suggested Next Page To Visit To Connect To The robot 
-Next you can take a look next at the [**CONNECTING**](https://learn.ubiquityrobotics.com/connecting)  page of the learn documentation.-->
+11. You can now reconnect the battery with the red connector, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector.
 
 
 
-## Screw BOM
-<!-- TODO recheck lengths and number of needed screws -->
+## Bolt BOM
 ### Screen
 - 4xM3x10mm Cap socket - Screen Top
 - 4xM3x10mm Cap socket - Screen Base
 - 4xM3x10mm Cap socket - Screen to base
-- 4xM3x5mm Cap socket - Screen to holders
+- 4xM3x4mm Cap socket - Screen to holders
 - 4xM2 Philips round - Camera
 
 ### Tower
 - 5xM5x10mm Button socket - Bottom shelf
 - 5xM5x10mm Button socket - Top shelf
-- 4xM5 Cap Socket - Angle shelf holder
-- 6xM6 Cap Socket - Mounting tower onto the shell
+- 4xM5x14mm Cap Socket - Angle shelf holder
+- 6xM6x15mm Cap Socket - Mounting tower onto the shell
 
 ### Shell
-- 4xM4 Button socket - shell side cover (NO PICTURE OF THIS IN THE TUTORIAL)
-- 4xM4 Cap Socket - Front cover
-- 2xM4 Thumb screw - front charging cover (with black plastic for easy twisting)
-- 2xM5 Cap Socket - Lidar holder to shell
-- 4xM3 Cap Socket - Lidar screws
+- 4xM4x8mm Button socket - shell side cover (NO PICTURE OF THIS IN THE TUTORIAL)
+- 4xM4x12mm Cap Socket - Front cover
+- 2xM4x13mm Thumb screw - front charging cover (with black plastic for easy twisting)
+- 2xM5x14mm Cap Socket - Lidar holder to shell
+- 4xM3x8mm Cap Socket - Lidar screws
 - 3x Grommet (black rubber to cover lidar holes with)
 
 ## Electrical BOM
@@ -237,7 +208,8 @@ Next you can take a look next at the [**CONNECTING**](https://learn.ubiquityrobo
 - 1x Emergency switch cable
 - 1x Shell Power switch
 - 1x Shell Power switch cable
-- TODO ..?
+- 1x USB mcro cable
+- 2x Flat cable 1m
 ## Mechanical Parts BOM
 
 ![Mechanical Parts](mechanical_parts.jpg)
@@ -255,22 +227,3 @@ Next you can take a look next at the [**CONNECTING**](https://learn.ubiquityrobo
   11. 1x Battery Shell Cover
   12. 2x Touchscreen Holders
   13. 2x Shell Distancers
-
-
-<!-- 
-Additional comments:
- - sonar opening cloths will need to be glued onto the shell and the front pannel in the TP for all robots. A couple of videos of that process can be found here: https://workdrive.zohoexternal.com/external/6LXgEVTNma1-MvQRf . We are cutting the cloths on the laser that is in TP, but there are enough cloths already cut out for 6 robots at current moment. They are in the breadcrumb storage box.
- - another major design addition that we are expecting is a hand brake (that will be used for certification purposes and to brake the robot even if there is no power)
- - the pictures in this tutorial can be a bit outdated since our design has been changing a lot. If you feel there are pictures or descriptions that need updating please go ahead and make an Issue OR make a new branch and PR (or merge yourself)
- - Numbers and sizes of screws need to be re-checked again because they might be wrong (especially lengths of screws)
- - The video of how the packaging process should look like can be found here: https://workdrive.zohoexternal.com/external/6LXgEVTNma1-MvQRf (this are just ideas on the video and should be improved)
- - The packaging should ideally survive 20 drops from a table to the floor and so nothing inside is bent 
- - The power switch and emg switch cables are NOT made yet but we have all the components for making them in TP (ideally we would outsource making these cables later). There are pictures of how it looks like in the repo : emg_power_switch_cables_1.jpg and emg_power_switch_cables_2.jgp
- - Stuff needed for packaging and all components are in TP: 
-     - there is a box in TP named Breadcrumb Storage (ex Janez storage) with 20 EMG switches
-     - in TP in orange electrical drawers there are: black power switches, connectors for black power switches, molex connectors, molex connector housings
-     - in TP there are molex connector wrenches
-     - wrapping paper, bubble wrap, packaging tape and some unused cardboard boxes are in TP
-- Talk with Neja regarding paperwork for sending the packages
-
- -->
