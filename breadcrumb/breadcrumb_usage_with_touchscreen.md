@@ -13,6 +13,7 @@ Touchscreen UI adds an additional three features to the basic Breadcrumb usabili
 - In order for the Breadcrumb to start moving on the route, START button on the touchscreen should be pressed
 - During the drive, the robot can be stopped by pressing the STOP button (START should be pressed to continue)
 - Breadcrumb will stop on STOP marker and wait for the user to press CONTINUE
+
 ## Control panel screen
 The most noticeable part of the “Control panel screen” is the big green “Start/Stop button”, with “START” written on it. After pressing it, it changes its color to red and its text to “STOP”. It is used for the robot to start or stop following the markers of the currently selected route. When the robot finishes the route by stopping on a STOP marker, this button changes its color to blue and its text to “CONTINUE”. Now, when pressing this button, the robot will start following the route again from its beginning.  
 The route can be easily selected in the dropdown menu, which is located below the “Start/Stop button”. To edit, create or delete a route, the gear icon in the top right corner can be pressed, which leads to the “Settings screen”. 
