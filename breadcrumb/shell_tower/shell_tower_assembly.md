@@ -5,7 +5,7 @@ permalink: unboxing
 author: Janez Cimerman, Kristjan Povše
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/learn/) - - - &uarr;[up](ix_quick_start)
+#### &uarr;[top](https://ubiquityrobotics.github.io/learn/)
 
 ## Shell and Tower assembly instructions
 
