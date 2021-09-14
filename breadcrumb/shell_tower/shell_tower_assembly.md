@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Unboxing and Assembling the Tower and the Shell for magni robot"
-permalink: unboxing
+permalink: shell_tower_assembly
 author: Janez Cimerman, Kristjan Povše
 ---
 
