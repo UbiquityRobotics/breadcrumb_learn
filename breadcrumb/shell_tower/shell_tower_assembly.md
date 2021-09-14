@@ -30,7 +30,7 @@ c) Screw types used and their names in the instructions:
 <!-- The original plan for breadcrumb is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
 
 *) If you prefer to watch a assembly video, follow the links below:
-- ![Tower Assembly](https://www.youtube.com/watch?v=RDe5XLQTHwM&list=PLPnxQZtxFdG9obcXMQhS9SbZkpD1yAyxk&index=22)
+- ![Tower Assembly](https://www.youtube.com/watch?v=RDe5XLQTHwM)
 - ![Tower on Top of Magni](https://www.youtube.com/watch?v=O-YKXxbponM)
 
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (4xM2 screws) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
