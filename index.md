@@ -18,7 +18,7 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 #### High Level Overviews
 
 1.  [Introduction To The Breadcrumb](breadcrumb/introduction.md)
-2.  [Unboxing and Assembling the Breadcrumb](breadcrumb/unboxing.md)
+2.  [Unboxing and Assembling the Breadcrumb](breadcrumb/shell_tower/shell_tower_assembly.md)
 3.  [Breadcrumb Power Controls](breadcrumb/breadcrumb_key.md)
 
 #### Quick Start
