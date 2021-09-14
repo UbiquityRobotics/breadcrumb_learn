@@ -30,8 +30,8 @@ c) Screw types used and their names in the instructions:
 <!-- The original plan for breadcrumb is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
 
 *) If you prefer to watch a assembly video, follow the links below:
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=RDe5XLQTHwM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=O-YKXxbponM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+- https://www.youtube.com/watch?v=RDe5XLQTHwM
+- https://www.youtube.com/watch?v=O-YKXxbponM
 
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (4xM2 screws) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
