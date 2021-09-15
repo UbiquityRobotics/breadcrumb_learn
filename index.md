@@ -3,7 +3,7 @@ layout: default
 title:  "Main Menu"
 ---
 
-# Breadcrumb Documentation
+# ConveyorBot Documentation
 
 <!--
 <H3 style="color:red">Warning</H3>
@@ -18,7 +18,7 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 #### High Level Overviews
 
 1.  [Introduction To The Breadcrumb](breadcrumb/introduction.md)
-2.  [Unboxing and Assembling the Breadcrumb](breadcrumb/shell_tower/shell_tower_assembly.md)
+2.  [Unboxing and Assembling the ConveyorBot](breadcrumb/shell_tower/shell_tower_assembly.md)
 3.  [Breadcrumb Power Controls](breadcrumb/breadcrumb_key.md)
 
 #### Quick Start
@@ -29,18 +29,18 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 4.  [How to setup the Raspberry Pi Touchscreen](breadcrumb/touchscreen.md)
 5.  [How to setup the LiDAR](breadcrumb/lidar.md)
 
-#### Basic Breadcrumb Usage
+#### BasicConveyorBot Usage
 
 1.  [Marker Types and Placing Markers in the Desired Location](breadcrumb/marker_types_and_placing_them.md)
-2.  [Running Breadcrumb](breadcrumb/running_breadcrumb.md)
-3.  [Driving a Breadcrumb](breadcrumb/driving_a_breadcrumb.md)
+2.  [Running ConveyorBot](breadcrumb/running_ConveyorBot.md)
+3.  [Driving a ConveyorBot](breadcrumb/driving_a_ConveyorBot.md)
 
 #### Breadcumb Usage With Touchscreen UI
 
-1.  [Touchscreen Guide and Route management](breadcrumb/breadcrumb_usage_with_touchscreen.md)
+1.  [Touchscreen Guide and Route management](breadcrumb/ConveyorBot_usage_with_touchscreen.md)
 
 
-#### Doing More With Your Breadcrumb
+#### Doing More With Your ConveyorBot
 
 1.  [Visualize with Rviz](breadcrumb/rviz.md)
 2.  [Running in Gazebo](breadcrumb/gazebo.md)
