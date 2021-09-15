@@ -17,7 +17,7 @@ b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and 
 
 c) Screw types used and their names in the instructions:
 
-![Screw Types](screws.png)
+![Screw Types](bolts.png)
 
 ### Assembly process Video
 
