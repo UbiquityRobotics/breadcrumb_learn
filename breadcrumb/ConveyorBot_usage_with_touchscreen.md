@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Breadcrumb usage with Touchscreen UI"
-permalink: breadcrumb_usage_with_touchscreen
+title:  "ConveyorBot usage with Touchscreen UI"
+permalink: ConveyorBot_usage_with_touchscreen
 ---
 
 #### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
@@ -28,7 +28,7 @@ To delete the route, which is currently being edited, click on the button with t
 The settings screen is shown on the image below.  
 <img src="breadcrumb/assets/settings_screen.png" >
 ## Route management
-The basic Breadcrumb usability is very limited. The route management functionality allows Breadcrumb robot to navigate itself in a more advanced level. If you press the settings button on the Control panel screen, you'll see the main route management page. This was  described already in the previous section of this page.  
+The basic ConveyorBot usability is very limited. The route management functionality allows ConveyorBot robot to navigate itself in a more advanced manner. If you press the settings button on the Control Panel screen, you'll see the main route management page. This was  described already in the previous section of this page.  
 Now we will tell you how to properly set up a route. An analogy for how the route setup works is the way somebody navigates you while driving a car. The navigator only tells you where you have to turn in the crossroads - he doesn’t tell you that you have to go straight on a road which is itself straight (and has no other ways to turn), or to stop where there is already a stop sign. So, to set up a route on which the robot will drive, you have to specify only TURN markers in the crossroads of the route. Actually, all other TURN markers (the ones which are not specified in the route plan) are ignored by default. You don’t have to specify GO, STOP or BIDIR markers (but you have to do this in a special case, specified later in this section). To get more information about all types of markers, navigate to the [Marker Types and Placing Markers in the Desired Location](marker_types_and_placing_them.md) section.  
 To specify the order of turns in crossroads, put the numbers of TURN markers, which mark the appropriate turns, into the left column of the route editor in the correct order.  
 If you want to completely ignore a marker, put it into the right (“Don’t follow”) column. An example where this would be useful would be if you have multiple robots driving on the same route, and you put some STOP markers into the route and you want only some robots to stop on them, you can put those STOP markers into the ignore list on the robots which shouldn’t stop on them.  
