@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  "Breadcrumb Key Parts"
-permalink: breadcrumb_key
+title:  "ConveyorBot Key Parts"
+permalink: ConveyorBot_key
 ---
 
-# Views of Breadcrumb with Key Parts Identified
+# Views of ConveyorBot with Key Parts Identified
 
 
 <img src="https://ubiquityrobotics.github.io/learn/assets/Magni_Front_View_1.jpg" />
