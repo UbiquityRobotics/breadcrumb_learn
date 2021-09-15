@@ -43,16 +43,16 @@ Note the batteries orientation - they need to have terminals at the back of the 
     ![Lidar Cable Guide](https://user-images.githubusercontent.com/53408077/127979821-400f1209-d761-4cf3-9155-169bef946041.jpg)
 
 
-3. Mount the two shell switches and connect the cables. Red ESTOP button is assembled from two separate pieces. To install, first disassamble it by turning red and black "mushroom" part counter-clockwise and pulling it upwards. Put the "mushroom" part thro the hole in the shell like shown.
+3. Mount the two shell switches and connect the cables. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it upwards. Put the "mushroom" part thro the hole in the shell like shown.
 
     ![Disassembled ESTOP](https://user-images.githubusercontent.com/53408077/127981007-8b6c83c5-acd2-4087-aebe-32a92b743f72.jpg)
 
 
-    Assamble the estop button by pushing it lightly inwards and turn it closkwise (This part should go together easily without unnecessary force) . Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
+    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force) . Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
 
     ![Emg Assemble](emg_assemble.jpg)
         
-    Make sure to take note where which cable is going to the emergency and which into the power switch (CABLE COLORS MAY WARRY).
+    Make sure to take note where which cable is going to the emergency and which into the power switch (CABLE COLORS MAY WARY).
 
     ![Switches Shell Cables](switches_shell_cables.jpg)
 

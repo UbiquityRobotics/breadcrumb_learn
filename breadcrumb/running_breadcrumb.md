@@ -11,7 +11,7 @@ permalink: running_breadcrumb
 Before the Breadcrumb starts moving it is necessary to place the markers in the desired location.
 [See how to place markers](marker_types_and_placing_them.md).
 
-Innitialy when robot is boot up, touchscreen display shows an **Loading** screen. After the system is ready you should be able to see a screen with a **START** button.
+Initially when robot is boot up, touchscreen display shows an **Loading** screen. After the system is ready you should be able to see a screen with a **START** button.
 From initial pose, it will wait for the user to press START and the move to towards the detected marker.
 It is important that the robot sees the first marker, otherwise it will not move and pop-up a warning on the screen.
 

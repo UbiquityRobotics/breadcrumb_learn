@@ -32,7 +32,7 @@ For more information about ArUco refer to [`ArUco`](http://docs.opencv.org/trunk
 You can generate STag markers from any library you prefer.
 Make sure you set the corresponding `libraryHD` parameter in launch file.
 We performed most of the test with library **HD15**, which suited our needs.
-For more infomation about STag refer to [`STag`](https://github.com/usrl-uofsc/stag_ros).
+For more information about STag refer to [`STag`](https://github.com/usrl-uofsc/stag_ros).
 
 ## Packs
 

@@ -38,7 +38,7 @@ Make sure the directory is populated with fiducial models before hand. If not, g
 
     python fiducial_gen.py
 
-This scripts will generate everything neccesary to spawn a fiducial into Gazebo simulation.
+This scripts will generate everything necessary to spawn a fiducial into Gazebo simulation.
 
 
 ## Fiducial follow
