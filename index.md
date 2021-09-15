@@ -8,7 +8,7 @@ title:  "Main Menu"
 <!--
 <H3 style="color:red">Warning</H3>
 
-The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, or whatever you have to lift the wheels free of the floor, or run it somewhere where it can't hurt anyone or anything if it surprises you. NOT ON A TABLE TOP.
+The ConveyorBot robot is strong, fast, and heavy. Initially, use lumber, bricks, or whatever you have to lift the wheels free of the floor, or run it somewhere where it can't hurt anyone or anything if it surprises you. NOT ON A TABLE TOP.
 
 <H4 style="color:red">Always remove the red battery cable for any work on boards to remove live voltage from the main board</H4>
 
@@ -17,9 +17,9 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 
 #### High Level Overviews
 
-1.  [Introduction To The Breadcrumb](breadcrumb/introduction.md)
+1.  [Introduction To The ConveyorBot](breadcrumb/introduction.md)
 2.  [Unboxing and Assembling the ConveyorBot](breadcrumb/shell_tower/shell_tower_assembly.md)
-3.  [Breadcrumb Power Controls](breadcrumb/breadcrumb_key.md)
+3.  [Breadcrumb Power Controls](breadcrumb/ConveyorBot_key.md)
 
 #### Quick Start
 
@@ -46,7 +46,7 @@ The Breadcrumb robot is strong, fast, and heavy. Initially, use lumber, bricks, 
 2.  [Running in Gazebo](breadcrumb/gazebo.md)
 3.  [Modifying navigation parameters](breadcrumb/tuning_nav.md)
 
-#### Support and Verification Of Your Robot
+#### Support and Verification Of Your ConveyorBot
 
 1. [Magni support](https://learn.ubiquityrobotics.com/)
 
