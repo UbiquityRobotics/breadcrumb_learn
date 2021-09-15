@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Driving a Breadcumb"
-permalink: driving_a_breadcrumb
+title:  "Driving a ConveyorBot"
+permalink: driving_a_ConveyorBot
 ---
 
 #### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
