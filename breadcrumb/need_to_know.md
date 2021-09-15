@@ -5,7 +5,7 @@ permalink: need_to_know
 ## Requirements
 #### &uarr;[top](https://ubiquityrobotics.github.io/learn/)
 
-### About Magni
+### About Magni -The Driving Base of ConveyorBot
 
 Ubiquity Robotics use Raspberry Pi 3s running Ubuntu 16.04, ROS Kinetic and custom software for the Magni platform. There are also utility programs that will enable you to connect to a local area network.
 
