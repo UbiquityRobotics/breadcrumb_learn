@@ -4,7 +4,7 @@ title:  "Running ConveyorBot"
 permalink: running_ConveyorBot
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # Running ConveyorBot
 
@@ -17,10 +17,10 @@ It is important that the robot sees the first marker, otherwise it will not move
 
 ### Basic ConveyorBot Usage
 
-Breadcrumb will smoothly navigate between markers, where each marker arrow should point in the direction of the next marker.
+ConveyorBot will smoothly navigate between markers, where each marker arrow should point in the direction of the next marker.
 If the robot encounters a STOP marker, it will stop on it and turn in the direction of arrow.
 Once robot is on the STOP marker, it will wait until **CONTINUE** is pressed on the touchscreen and then continue driving in the direction of the arrow.
-Breadcrumb does not neccesary need to see a next marker from the position on STOP marker.
+ConveyorBot does not neccesary need to see a next marker from the position on STOP marker.
 
 To make a system work as intended, set of rules should be followed to prevent undesired behaviour.
 
@@ -41,7 +41,7 @@ or in Gazebo:
 
 ConveyorBot main package are:
 - `raspicam_node` that starts onboard Raspberry Pi Camera
-- `ConveyorBot_description` that spawns a urdf breadcrumb model
+- `ConveyorBot_description` that spawns a urdf ConveyorBot model
 - `ConveyorBot_detect` for detecting markers and forwarding the pose of the markers
 - `ground_fiducials` which handles type of markers
 - `ConveyorBot_nav` which handles navigation maneuvers execution

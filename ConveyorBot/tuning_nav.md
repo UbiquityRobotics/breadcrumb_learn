@@ -4,11 +4,11 @@ title:  "Modifying navigation parameters"
 permalink: tuning_nav
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
-# Breadcrumb Navigation Stack
+# ConveyorBot Navigation Stack
 
-`breadcrumb_nav` is the main ROS package that consist of:
+`ConveyorBot_nav` is the main ROS package that consist of:
 - **Planning of the goals** (Phantom planner)
 - **Execution of navigation goals** (Move Smooth)
 - **Collision avoidance** based on LiDAR and/or Sonars
@@ -30,7 +30,7 @@ Correspondingly there are two ROS Services:
 - `send_phantom` handles sending/preempting Phantom goal
 
 In practical terms, the two goals are equal, our idea was to distinguish the two since the both serve for a different purpose.
-In case of Breadcrumb, the purpose of phantom goal is for the robot to blindly drive in the direction in
+In case of ConveyorBot, the purpose of phantom goal is for the robot to blindly drive in the direction in
 which marker points (planning in Fiducial frame), until it detects a new marker. When it detects a new marker it preempts the
 phantom goal and removes it from the Queue on the Action Server and sends a pair of Fiducial goal and a new Phantom goal 
 according to this new detected marker.
@@ -46,8 +46,8 @@ If data from a laser scanner or sonars is available, collision avoidance can be 
 
 ## Dynamically Reconfigure Navigation parameters
 
-While Breadcrumb is running, you can modify its velocity or change the stopping distance of the robot in order to prevent collision etc.
-Before proceeding you should make sure Breadcrumb is connected to the network (https://learn.ubiquityrobotics.com/connect_network) and your workstation synced with Breadcrumb (https://learn.ubiquityrobotics.com/workstation_setup). 
+While ConveyorBot is running, you can modify its velocity or change the stopping distance of the robot in order to prevent collision etc.
+Before proceeding you should make sure ConveyorBot is connected to the network (https://learn.ubiquityrobotics.com/connect_network) and your workstation synced with ConveyorBot (https://learn.ubiquityrobotics.com/workstation_setup). 
 In order to do so, open a terminal on your workstation and run:
 
     rosrun rqt_reconfigure rqt_reconfigure

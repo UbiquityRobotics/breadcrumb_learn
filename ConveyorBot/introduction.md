@@ -7,13 +7,13 @@ title:  "Introduction"
 # ConveyorBot: Ubiquity Robotics' Conveyor Robot
 
 
-> ![ConveyorBot](breadcrumb/assets/Breadcrumb_main.jpg)
+> ![ConveyorBot](ConveyorBot/assets/ConveyorBot_main.jpg)
 
 
 **ConveyorBot** is a mobile robot that can transport loads up to 60 kg\*.
 It is a software suite that runs on a Ubiquity Robotics Magni that enables a robot conveyor application. 
-In this application, the robot will follow a set of Breadcrumb markers called 'Fiducials' which are placed on the floor. 
-The combination of Fiducials and the built-in touchscreen make it easy to control the navigation and path planning of Breadcrumb.
+In this application, the robot will follow a set of ConveyorBot markers called 'Fiducials' which are placed on the floor. 
+The combination of Fiducials and the built-in touchscreen make it easy to control the navigation and path planning of ConveyorBot.
 The robot optimizes the workflow and frees up human resources, thus increasing productivity and reducing logistics costs.
 
 
