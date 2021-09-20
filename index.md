@@ -19,7 +19,7 @@ The ConveyorBot robot is strong, fast, and heavy. Initially, use lumber, bricks,
 
 1.  [Introduction To The ConveyorBot](breadcrumb/introduction.md)
 2.  [Unboxing and Assembling the ConveyorBot](breadcrumb/shell_tower/shell_tower_assembly.md)
-3.  [Breadcrumb Power Controls](breadcrumb/ConveyorBot_key.md)
+3.  [ConveyorBot Power Controls](breadcrumb/ConveyorBot_key.md)
 
 #### Quick Start
 
