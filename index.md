@@ -29,13 +29,13 @@ The ConveyorBot robot is strong, fast, and heavy. Initially, use lumber, bricks,
 4.  [How to setup the Raspberry Pi Touchscreen](ConveyorBot/touchscreen.md)
 5.  [How to setup the LiDAR](ConveyorBot/lidar.md)
 
-#### BasicConveyorBot Usage
+#### Basic ConveyorBot Usage
 
 1.  [Marker Types and Placing Markers in the Desired Location](ConveyorBot/marker_types_and_placing_them.md)
 2.  [Running ConveyorBot](ConveyorBot/running_ConveyorBot.md)
 3.  [Driving a ConveyorBot](ConveyorBot/driving_a_ConveyorBot.md)
 
-#### Breadcumb Usage With Touchscreen UI
+#### ConveyorBot Usage With Touchscreen UI
 
 1.  [Touchscreen Guide and Route management](ConveyorBot/ConveyorBot_usage_with_touchscreen.md)
 
