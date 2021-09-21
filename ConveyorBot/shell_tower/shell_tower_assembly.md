@@ -11,9 +11,9 @@ author: Janez Cimerman, Kristjan Povše
 
 ### Before you begin: 
 
-a) The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables to prevent any short circuits to the main PCB board – named MCB. To turn off the robot with the provided main switches is not enough.
+a) !!IMPORTANT!! Disconnect the batteries before doing anything with the cables to prevent any short circuits to the main PCB board – named MCB. Turning off the robot with the provided main switches is not sufficient.
 
-b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times, just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or an SSH connection to shut it down and then cut the power.
+b) If the Raspberry PI has a micro SD card mounted – avoid power cycling it too many times. This can lead to microSD card corruption. Always try to use the touchscreen or an SSH connection to shut down and then shut the power.
 
 c) Screw types used and their names in the instructions:
 
@@ -26,29 +26,29 @@ If you prefer to watch a assembly video, follow the links below:
 - https://www.youtube.com/watch?v=O-YKXxbponM
 
 ### Assembly process
-
-<!-- The original plan for ConveyorBot is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
+ 
+<!-- The original plan for ConveyorBot was for sonars only(for safety stopping) but they are not sufficiently reliable. We strongly suggest using the included LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
 
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (4xM2 screws) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
 
     ![Base Robot Without The Camera](https://user-images.githubusercontent.com/53408077/127979241-25dc71c2-dab8-4a5d-acd6-eb58c3729061.jpg)
 
-2. Connect the LIDAR molex power connector like shown - INTO THE LEFT MOLEX CONNECTOR and the LAN cable into the RPI LAN port.
+2. Connect the LIDAR molex power connector as shown - INTO THE LEFT MOLEX CONNECTOR and the LAN cable into the RPI LAN port.
 
     ![Molex Connector](molex_lidar_conn.jpg)
 
-    In this tutorial we are going to mount it on the left side of the shell (there are more positions available - [see picture](lidar_mounts2.png)). Guide the lidar cable through the sheet metal holder hole, like shown in the picture. 
+    Mount it on the left side of the shell (there are more positions available - [see picture](lidar_mounts2.png)). Guide the lidar cable through the sheet metal holder hole, like shown in the picture. 
 
     ![Lidar Cable Guide](https://user-images.githubusercontent.com/53408077/127979821-400f1209-d761-4cf3-9155-169bef946041.jpg)
 
 
-3. Mount the two shell switches and connect the cables. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it upwards. Put the "mushroom" part thro the hole in the shell like shown.
+3. Mount the two shell switches and connect the cables. The Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it upwards. Put the "mushroom" part through the hole in the shell like shown.
 
     ![Disassembled ESTOP](https://user-images.githubusercontent.com/53408077/127981007-8b6c83c5-acd2-4087-aebe-32a92b743f72.jpg)
 
 
-    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force) . Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
+    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force). Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
 
     ![Emg Assemble](emg_assemble.jpg)
         
@@ -80,13 +80,13 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
 ### Tower assembly
 
-In this section it is shown how to assemble the Tower 
+In this section shows how to assemble the Tower 
 
-1. Take the shown sheet metal parts and use 4xM2 phillips screws to mount the camera and 4xM3 short socket screws to mount the touchscreen holders.
+1. Take the sheet metal parts and use 4xM2 phillips screws to mount the camera and 4xM3 short socket screws to mount the touchscreen holders.
 
     ![Touchscreen Holders](touchscreen_holders.png)
 
-1. Connect the two flat cables and one USB cable as shown. Notice how the blue sides of the flat cable connectors are turned – camera outward and screen inward. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible. A lot of times, this connection being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later. Here it is useful to use a sharpie to indicate which flat cable is connected to camera and which to the screen.
+1. Connect the two flat cables and one USB cable as shown. Notice how the blue sides of the flat cable connectors are turned – camera outward and screen inward. Please make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible. Often, these connections are the reason screens or cameras don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later. Hint: use a sharpie to indicate which flat cable and which side is connected to camera and which to the screen.
 
     ![Flat Cables](flat_cables.png)
 
@@ -103,7 +103,7 @@ In this section it is shown how to assemble the Tower
 
     ![Screen To Angle](screen_to_angle.jpg)
 
-5. As the last part of the tower assembly, mount the front panel using 4xM3 socket screws.
+5. Finally, mount the front panel using 4xM3 socket screws.
 
     ![Screen Front Screw](screen_front.jpg)
     
@@ -141,7 +141,7 @@ In this section it is shown how to assemble the Tower
 
     ![Camera Stream](camstream.jpg)
 
-    If everything went well touch the camera stream to exit and shutdown the RPI, wait 20 seconds for RPI to properly shutdown and then again disconnect the red battery cable before proceeding.
+    If everything went well, touch the camera stream <!-- ? -->to exit and shutdown the RPI, wait 20 seconds for RPI to properly shutdown and then again disconnect the red battery cable before proceeding.
 
 6. Use 4xM4 socket screws to mount the front plate
 
@@ -161,18 +161,18 @@ In this section it is shown how to assemble the Tower
     ![Shelves Mount](shelves_mount.png)
 
 
-9.  Mount black grommets into the empty LIDAR connector holes. Side point: more LIDAR positions are available. All those can be used, but then an easy parameter change needs to be done in the system of the robot.
+9.  Mount black grommets into the empty LIDAR connector holes. Note: additional LIDAR positions are available. All these can be used, but an easy parameter change is required.
 
     ![Lidar Mounts](lidar_mounts.png)
 
-    ![Lidar Mounts 2](lidar_mounts2.png)
+    ![Lidar Mounts 2](lidar_mounts2.png
 
 
 10. Wherever you mounted your lidar, make sure the system knows about its location on the robot by SSH-ing into the robot and then editing the following folder
  
         sudo nano /etc/ubiquity/robot.yaml
     
-    And the lidar position should be changed to the proper one. In this tutorial the lidar was mounted on the left side of the shell. Position of the camera should be downward
+    The lidar position should be properly specified. In this tutorial the lidar was mounted on the left side of the shell. Position of the camera should be downward
 
         lidar: {'position' : 'shell_left'} # possible: none, top_plate, shell_left, shell_right, shell_center, tower_center
 
