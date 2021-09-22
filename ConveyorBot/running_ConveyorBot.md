@@ -1,26 +1,26 @@
 ---
 layout: default
-title:  "Running Breadcrumb"
-permalink: running_breadcrumb
+title:  "Running ConveyorBot"
+permalink: running_ConveyorBot
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
-# Running Breadcrumb
+# Running ConveyorBot
 
-Before the Breadcrumb starts moving it is necessary to place the markers in the desired location.
+Before the ConveyorBotstarts moving it is necessary to place the markers in the desired location.
 [See how to place markers](marker_types_and_placing_them.md).
 
 Initially when robot is boot up, touchscreen display shows an **Loading** screen. After the system is ready you should be able to see a screen with a **START** button.
 From initial pose, it will wait for the user to press START and the move to towards the detected marker.
 It is important that the robot sees the first marker, otherwise it will not move and pop-up a warning on the screen.
 
-### Basic Breadcrumb Usage
+### Basic ConveyorBot Usage
 
-Breadcrumb will smoothly navigate between markers, where each marker arrow should point in the direction of the next marker.
+ConveyorBot will smoothly navigate between markers, where each marker arrow should point in the direction of the next marker.
 If the robot encounters a STOP marker, it will stop on it and turn in the direction of arrow.
 Once robot is on the STOP marker, it will wait until **CONTINUE** is pressed on the touchscreen and then continue driving in the direction of the arrow.
-Breadcrumb does not neccesary need to see a next marker from the position on STOP marker.
+ConveyorBot does not neccesary need to see a next marker from the position on STOP marker.
 
 To make a system work as intended, set of rules should be followed to prevent undesired behaviour.
 
@@ -39,11 +39,11 @@ or in Gazebo:
 
   `roslaunch ground_fiducials sim_ground_fiducials.launch`
 
-Breadcrumb main package are:
+ConveyorBot main package are:
 - `raspicam_node` that starts onboard Raspberry Pi Camera
-- `breadcrumb_description` that spawns a urdf breadcrumb model
-- `breadcrumb_detect` for detecting markers and forwarding the pose of the markers
+- `ConveyorBot_description` that spawns a urdf ConveyorBot model
+- `ConveyorBot_detect` for detecting markers and forwarding the pose of the markers
 - `ground_fiducials` which handles type of markers
-- `breadcrumb_nav` which handles navigation maneuvers execution
+- `ConveyorBot_nav` which handles navigation maneuvers execution
 
-For more advance usage and capabilities refere to [Breadcrumb usage with touchscreen](breadcrumb_usage_with_touchscreen.md).
+For more advance usage and capabilities refere to [ConveyorBot usage with touchscreen](ConveyorBot_usage_with_touchscreen.md).

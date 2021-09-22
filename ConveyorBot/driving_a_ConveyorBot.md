@@ -1,23 +1,23 @@
 ---
 layout: default
-title:  "Driving a Breadcumb"
-permalink: driving_a_breadcrumb
+title:  "Driving a ConveyorBot"
+permalink: driving_a_ConveyorBot
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # Driving a Breadcumb
 <br>
 
 <video style="display: block; margin-left: auto; margin-right: auto;" width="75%" controls autoplay>
-  <source src="breadcrumb/assets/Ubiquity_Turn_Cutted.mov" type="video/mp4">
+  <source src="ConveyorBot/assets/Ubiquity_Turn_Cutted.mov" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 <br>
 
 <video style="display: block; margin-left: auto; margin-right: auto;" width="75%" controls autoplay>
-  <source src="breadcrumb/assets/Ubiquity_Start_Stop.mov" type="video/mp4">
+  <source src="ConveyorBot/assets/Ubiquity_Start_Stop.mov" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

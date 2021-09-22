@@ -4,7 +4,7 @@ title:  "Running in Gazebo"
 permalink: gazebo
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # Running in Gazebo
 
@@ -17,22 +17,22 @@ Arbitrary ranges of Fiducial marker Gazebo models can be generated with /scripts
 This script populates /models directory.
 Before launching the Gazebo simulation, add to ~/.bashrc or enter to terminal:
 
-    export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/breadcrumb/breadcrumb_gazebo/models
+    export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/ConveyorBot/ConveyorBot_gazebo/models
 
-Launch files enable you to run the Gazebo, RViz and add our Breadcrumb robot in it. Additionally a simple controller opens up with which you can drive the Breadcrumb around.
+Launch files enable you to run the Gazebo, RViz and add our ConveyorBot robot in it. Additionally a simple controller opens up with which you can drive the ConveyorBot around.
 
 ## Launch files
 
-There are several demo worlds you can use to get familiar with the breadcrumb functionality. They can be found in `worlds` directory.
+There are several demo worlds you can use to get familiar with the ConveyorBot functionality. They can be found in `worlds` directory.
 To run them use:
 
-    roslaunch breadcrumb_gazebo fiducial_world.launch world_name:=<WORLD-NAME>.world
+    roslaunch ConveyorBot_gazebo fiducial_world.launch world_name:=<WORLD-NAME>.world
 
 If `world_name` is left empty launch files runs by default a world with robot and a markers route.
 
-add to ~/.bashrc or enter to terminal before launching (modify the path so it will point to /models directory in breadcrumb_gazebo):
+add to ~/.bashrc or enter to terminal before launching (modify the path so it will point to /models directory in ConveyorBot_gazebo):
 
-    export GAZEBO_MODEL_PATH=/catkin_ws/src/breadcrumb/breadcrumb_gazebo/models
+    export GAZEBO_MODEL_PATH=/catkin_ws/src/ConveyorBot/ConveyorBot_gazebo/models
 
 Make sure the directory is populated with fiducial models before hand. If not, go to `scripts/fiducial_generator` directory and run:
 
@@ -53,9 +53,9 @@ If touchscreen is used, consider reading the section below.
 
 ### Touchscreen UI
 
-Run [`breadcrumb_touchscreen`](https://github.com/UbiquityRobotics/breadcrumb/tree/indigo-devel/breadcrumb_touchscreen)
-on your local workstation. If you want to make sure it will not launch Chromium in kiosk mode then open Chromium before running `breadcrumb_touchscreen`.
+Run [`ConveyorBot_touchscreen`](https://github.com/UbiquityRobotics/ConveyorBot/tree/indigo-devel/ConveyorBot_touchscreen)
+on your local workstation. If you want to make sure it will not launch Chromium in kiosk mode then open Chromium before running `ConveyorBot_touchscreen`.
 
 ```
-roslaunch breadcrumb_touchscreen touchscreen_rosbridge.launch
+roslaunch ConveyorBot_touchscreen touchscreen_rosbridge.launch
 ```

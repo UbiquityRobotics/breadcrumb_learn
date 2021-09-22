@@ -4,11 +4,11 @@ title:  "If you don't have your robot yet"
 permalink: before_arrival
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # If You Don't Have Your Robot Yet
 
-Breadcrumb is optimized to run on a Raspberry Pi 3 or 4.
+ConveyorBot is optimized to run on a Raspberry Pi 3 or 4.
 If you have one (especially if you have Pi Camera for it), there are numerous things you can do easily*, even if you don't have one of out Magni Robots.  It would be possible to run our software on other platforms, but it would take a lot of effort to edit the various parameters.
 
 * You can install our virtual machine on your workstation. It can be [downloaded](https://downloads.ubiquityrobotics.com/) from the Ubiquity Robotics site. It has ROS already installed.
@@ -26,4 +26,4 @@ See the [instructions](how_to_generate_markers.md).
 * You can follow the Pi using Rviz and rqt_image_view on your workstation.
 See the [instructions](rviz) in the Doing More section.
 
-* We are also offering a Gazebo simulation you can run on your Workstation and a couple of demos you can refer to, to get a sense how the Breadcrumb is intended to be running. For more information go [here](gazebo)
+* We are also offering a Gazebo simulation you can run on your Workstation and a couple of demos you can refer to, to get a sense how the ConveyorBot is intended to be running. For more information go [here](gazebo)

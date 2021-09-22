@@ -4,7 +4,7 @@ title:  "Generating Fiducials"
 permalink: generating_fiducials
 ---
 
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # Generating Fiducials
 
@@ -12,7 +12,7 @@ For more information about fiducial markers refer to [marker_info](marker_types_
 
 Scripts offer a simple UI, which enables user to re-configure fiducials according to their need.
 
-Location of scripts is in Breadcrumb repository in the `breadcrumb/breadcrumb_detect/scripts` directory:
+Location of scripts is in ConveyorBot repository in the `ConveyorBot/ConveyorBot_detect/scripts` directory:
 
 - `ArUco/gen_markers.py` -> generate Aruco markers with frames
 - `STag/gen_markers_autogen.py` -> generate STag markers with frames by generating also the inner part.

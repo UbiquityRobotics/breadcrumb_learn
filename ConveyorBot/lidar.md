@@ -1,8 +1,8 @@
-#### &uarr;[top](https://ubiquityrobotics.github.io/breadcrumb_learn/)
+#### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
 # LiDAR
 
-## Assemble the LiDAR on Breadcrumb
+## Assemble the LiDAR on ConveyorBot
 
 TODO
 
