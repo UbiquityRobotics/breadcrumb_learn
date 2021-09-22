@@ -196,7 +196,7 @@ In this section it is shown how to assemble the Tower
 - 6xM6x15mm Cap Socket - Mounting tower onto the shell
 
 ### Shell
-- 4xM4x10mm Cap socket - shell side cover
+- 4xM4x12mm Cap socket - Shell side cover
 - 4xM4x12mm Cap Socket - Front cover
 - 2xM4x13mm Thumb screw - front charging cover (with black plastic for easy twisting)
 - 2xM5x14mm Cap Socket - Lidar holder to shell
