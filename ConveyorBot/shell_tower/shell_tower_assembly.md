@@ -11,7 +11,7 @@ author: Janez Cimerman, Kristjan Povše
 
 ### Before you begin: 
 
-a) The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables to prevent any short circuits to the main PCB board – named MCB. To turn off the robot with the provided main switches is not enough.
+a) **!!! ALWAYS DISCONNECT THE CABLES FROM THE BATTERIES BEFORE DOING ANYTHING WITH ELECTRONICS !!!** The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables or electronics to prevent any short circuits to the main PCB board. Turning off the robot with the provided main switches is not enough. **Failing to do this can result in injuries and/or fried electronics!**
 
 b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times, just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or an SSH connection to shut it down and then cut the power.
 
@@ -29,7 +29,7 @@ If you prefer to watch a assembly video, follow the links below:
 
 <!-- The original plan for ConveyorBot is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
 
-1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (4xM2 screws) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
+1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
 
     ![Base Robot Without The Camera](https://user-images.githubusercontent.com/53408077/127979241-25dc71c2-dab8-4a5d-acd6-eb58c3729061.jpg)
@@ -48,7 +48,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
     ![Disassembled ESTOP](https://user-images.githubusercontent.com/53408077/127981007-8b6c83c5-acd2-4087-aebe-32a92b743f72.jpg)
 
 
-    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force) . Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
+    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force). Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
 
     ![Emg Assemble](emg_assemble.jpg)
         
@@ -56,7 +56,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Switches Shell Cables](switches_shell_cables.jpg)
 
-4. Mount the LIDAR holder using 2xM5 socket screws.
+4. Mount the LIDAR holder using **2xM5 socket screws**.
 
     ![Lidar Holder](lidar_holder.jpg)
 
@@ -72,7 +72,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Lidar Connection](lidar_connection.png)
 
-8.  Screw the LIDAR with 4xM3 socket screws
+8.  Screw the LIDAR with **4xM3 socket screws**
 
     ![Lidar Screw](lidar_screw.png)
 
@@ -82,32 +82,37 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
 In this section it is shown how to assemble the Tower 
 
-1. Take the shown sheet metal parts and use 4xM2 phillips screws to mount the camera and 4xM3 short socket screws to mount the touchscreen holders.
+1. Take the shown sheet metal parts and use **4xM2 phillips screws** to mount the camera and **4xM3 short socket screws** to mount the touchscreen holders.
 
     ![Touchscreen Holders](touchscreen_holders.png)
 
-1. Connect the two flat cables and one USB cable as shown. Notice how the blue sides of the flat cable connectors are turned – camera outward and screen inward. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible. A lot of times, this connection being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later. Here it is useful to use a sharpie to indicate which flat cable is connected to camera and which to the screen.
+1. Connect the two flat cables and one USB cable as shown. Notice how the blue sides of the flat cable connectors are turned – camera outward and screen inward. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible. A lot of times, this connection being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later. Here it is useful to use a sharpie to indicate which flat cable is connected to camera and which to the screen. 
+   
+   Again, the 3 cables that need to be connected:
+   - Screen flat cable (write "screen" on both ends for easier identification)
+   - Camera flat cable (write "camera" on both ends for easier identification)
+   - USB micro cable (to power the touchscreen)
 
     ![Flat Cables](flat_cables.png)
 
-2. Now use the 4xM3 socket screws to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
+2. Now use the **4xM3 socket screws** to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
 
     ![Screen Back Screw](screen_back.png)
 
 
-3. Use 6xM5 socket screws to put the two angle parts of the tower together
+3. Use **6xM5 socket screws** to put the two angle parts of the tower together.
 
     ![Angle Parts](angle_parts.jpg)
 
-4. Use 4xM3 socket screws to mount the screen assembly onto the angle assembly. Place the USB cable and screen flat cable into one cable duct (TODO CABLE DUCT ON THE PICS) and the camera flat cable into the other.
+4. Use **4xM3 socket screws** to mount the screen assembly onto the angle assembly. Place the USB cable and screen flat cable into one cable duct (TODO CABLE DUCT ON THE PICS) and the camera flat cable into the other.
 
     ![Screen To Angle](screen_to_angle.jpg)
 
-5. As the last part of the tower assembly, mount the front panel using 4xM3 socket screws.
+5. As the last part of the tower assembly, mount the front panel using **4xM3 socket screws**.
 
     ![Screen Front Screw](screen_front.jpg)
     
-1. The cables can also be inserted into cable guides
+6. The cables can also be inserted into cable guides.
 
     ![Cable Guides](cable_guides.png)
 
@@ -119,7 +124,7 @@ In this section it is shown how to assemble the Tower
 
     ![Tower On Shell](tower_on_shell.png)
 
-2. If you haven't already, please MAKE SURE THE BATTERIES ARE DISCONNECTED FROM THE ROBOT before continuing. Connect the two flat cables to Raspberry Pi (RPi). The screen flat cable connector is at the back and for camera in the middle of RPi. Notice that the blue part of the flat cable connector is pointed backward (touching black latch) for the screen cable and to the front for the camera cable. Make sure that these cables are pushed into the RPI as far as possible – a lot of people have problems when these connectors are not properly connected.
+2. If you haven't already, please **MAKE SURE THE BATTERIES ARE DISCONNECTED FROM THE ROBOT** before continuing. Connect the two flat cables to Raspberry Pi (RPi). The screen flat cable connector is at the back and for camera in the middle of RPi. Notice that the blue part of the flat cable connector is pointed backward (touching black latch) for the screen cable and to the front for the camera cable. Make sure that these cables are pushed into the RPI as far as possible – a lot of people have problems when these connectors are not properly connected.
 
     ![RPI Connect 1](rpi_connect1.png)
 
@@ -143,20 +148,20 @@ In this section it is shown how to assemble the Tower
 
     If everything went well touch the camera stream to exit and shutdown the RPI, wait 20 seconds for RPI to properly shutdown and then again disconnect the red battery cable before proceeding.
 
-6. Use 4xM4 socket screws to mount the front plate
+6. Use **4xM4 socket screws** to mount the front plate.
 
     ![Front Plate](front_plate.png)
 
-7. Mount the charging port cover
+7. Mount the charging port cover.
 
     ![Charging Cover](charging_cover.png)
 
 
-8.  Use 6xM6 socket screws to mount the tower and the shell to the robot. 
+8.  Use **6xM6 socket screws** to mount the tower and the shell to the robot. 
 
     ![Tower to Shell Mount](mount_tower_to_shell.png)
 
-    You can use 10xM5 button socket screws and 4xM5 socket screws to mount the shelves.
+    You can use **10xM5 button socket screws** and **4xM5 socket screws** to mount the shelves.
 
     ![Shelves Mount](shelves_mount.png)
 
