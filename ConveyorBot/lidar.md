@@ -19,3 +19,13 @@ and make the eth0 interface looks like
 		address 192.168.42.125/24 #this IP may depend on your lidar settings
 		gateway 0.0.0.0
 		dns-nameservers 8.8.8.8
+
+After that REBOOT the robot - for the changes to apply.
+
+## Troubleshooting
+
+Once network is setup, you should be able to see LiDAR scan points values by typing into the terminal (on robot):
+
+	rostopic echo /scan
+	
+If you don't see any than, something is wrong.
