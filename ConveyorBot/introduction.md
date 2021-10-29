@@ -28,4 +28,5 @@ It can carry the packages that can be handled by regular conveyor belts:
 - mostly human carryable small parts: screws, bolts and small electronic items
 
 
-
+ConvoyorBot can be configured in several ways using different lidar and/or sonar sensors. 
+Please contact Ubiquity Robotics for further information.
