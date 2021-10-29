@@ -126,11 +126,12 @@ In this section it is shown how to assemble the Tower
 
 2. If you haven't already, please **MAKE SURE THE BATTERIES ARE DISCONNECTED FROM THE ROBOT** before continuing. Connect the two flat cables to Raspberry Pi (RPi). The screen flat cable connector is at the back and for camera in the middle of RPi. Notice that the blue part of the flat cable connector is pointed backward (touching black latch) for the screen cable and to the front for the camera cable. Make sure that these cables are pushed into the RPI as far as possible – a lot of people have problems when these connectors are not properly connected.
 
+
     ![RPI Connect 1](rpi_connect1.png)
 
     ![RPI Connect 2](rpi_connect2.png)
-
-3. Connect the RPI back into the MCB board
+ 
+3. Connect the RPI back into the MCB board. It helps if you use some masking tape to temporarily hold the ribbon cables out of the way. With all the cables connected, mounting the RPI is a bit tricky, make sure all the pins are mounted correctly. If you are using a sonar board instead of or with a lidar, remount it now.
 
     ![RPI to MCB](rpi_to_mcb.png)
 
