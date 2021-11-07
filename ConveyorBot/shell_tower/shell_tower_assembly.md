@@ -138,7 +138,13 @@ In this section it is shown how to assemble the Tower
 
     ![USB cable](usb_cable.jpg)
 
-5. Before screwing the rest of the robot, try powering it up, to see if the screen and the camera work. You can do that by 1.) first make sure emergency switch is pressed inside and square switch is switched off, 2.)connecting the RED battery cable connector, 3.) switching on the square switch on the shell. The screen should be lighting up and after the robot boots, you should see camera stream on the WebApp. If anything does not work, the fault, most probably is the bad connections of the flat cables – recheck those. Turn off the robot and disconnect the RED battery connector before continuing.
+5. Before screwing the rest of the robot, try powering it up, to see if the screen and the camera work. You can do that by 
+    
+    1.) first make sure emergency switch is pressed inside and square switch is switched off, 
+    
+    2.)connecting the RED battery cable connector, 
+    
+    3.) switching on the square switch on the shell. The screen should be lighting up and after the robot boots, you should see camera stream on the WebApp. If anything does not work, the fault, most probably is the bad connections of the flat cables – recheck those. Turn off the robot and disconnect the RED battery connector before continuing.
  
     The screen should be lighting up and after the robot boots you should see camera stream by clicking the Screen icon on the Conveyorbot app. The camera stream might not show up immediately - please wait at least until the battery icon shows some battery charge. If anything does not work, the fault, most probably is the bad connections of the flat cables – recheck those. Turn off the robot and disconnect the RED battery connector before continuing.
 
