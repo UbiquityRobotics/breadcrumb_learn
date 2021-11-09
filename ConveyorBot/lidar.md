@@ -6,7 +6,7 @@
 
 TODO
 
-## LiDAR N301 network setup  ***see below for Ubuntu 20.04 setuo
+## LiDAR N301 network setup  on Ubuntu 16.04
 
 In order to make LiDAR work setup static IP
 	
@@ -27,65 +27,63 @@ After that REBOOT the robot - for the changes to apply.
 Once network is setup, you should be able to see LiDAR scan points values by typing into the terminal (on robot):
 
 	rostopic echo /scan
-	
-If you don't see any than, something is wrong.
 
-*** 
-Ubuntu changed the way to set static IPs when they upgraded to 20.04
+## LiDAR N301 network setup  on Ubuntu 20.04
 
-to assign a static IP using netplan create/edit the following:
+Ubuntu changed the way to set static IPs when they upgraded to 20.04. 
+To assign a static IP using netplan create/edit the following:
 
-cd /etc/systemd/network/
+- `/etc/systemd/network/10-eth-dhcp.network`:
 
-sudo vi 10-eth-dhcp.network
+		[Match]
+		Name=eth0
 
-# Run as DHCP client on all ethernet ports by default
-[Match]
-Name=eth0
+		[Link]
+		RequiredForOnline=no
 
-[Link]
-RequiredForOnline=no
+		[Network]
+		ConfigureWithoutCarrier=true
+		Address=192.168.42.125/24
 
-[Network]
-ConfigureWithoutCarrier=true
-Address=192.168.42.125/24
+- `/etc/netplan/01-netcfg.yaml` (create it if not already present):
 
-then edit the file in /etc/netplan  usually called 01-netcfg.yaml
-
-# This file describes the network interfaces available on your system
-# For more information, see netplan(5).
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    eth0:
-     dhcp4: no
-     addresses: [192.168.42.125/24]
-     gateway4: 0.0.0.0
-     nameservers:
-       addresses: [8.8.8.8]
+		network:
+		  version: 2
+		  renderer: networkd
+		  ethernets:
+		    eth0:
+		     dhcp4: no
+		     addresses: [192.168.42.125/24]
+		     gateway4: 0.0.0.0
+		     nameservers:
+		       addresses: [8.8.8.8]
        
-       Since netplan is being used we also need apply the changes:
+Since netplan is being used we also need apply the changes:
        
        sudo netplan --debug apply
        
-       this will flag anyy errors in your file -  yaml is space sensitive
+This will flag anyy errors in your file (yaml is space sensitive).       
+Check to see if things are correct with 
+
+	ipconfig 
        
-       Check to see if things are correct with ipconfig or ip a
-       
-       ping to 192.168.42.222 to see if there are packets.
+and ping to 192.168.42.222 to see if there is a successful transfer of packets:
 
-In the /lslidar_n301_decoder/launch/lslidar_n301.launch
+	ping 192.168.42.222
 
-make sure parameters are correct:
 
-<node pkg="lslidar_n301_driver" type="lslidar_n301_driver_node" name="lslidar_n301_driver_node" output="screen">
-    <param name="frame_id" value="laser_link"/>
-    <param name="device_ip" value="192.168.42.222"/>
-    <param name="msop_port" value="2368"/>
-    <param name="difop_port" value="2369"/>
-    <param name="add_multicast" value="false"/>
-    <param name="group_ip" value="224.1.1.2"/>
-  </node>
 
-You can then launch, but be aware once the lidar is launched, your terminal session may become extremely slow.
+Also make sure the parameters in the `/breadcrumb_bringup/launch/lidar.launch` are correct:
+
+	<node pkg="lslidar_n301_driver" type="lslidar_n301_driver_node" name="lslidar_n301_driver_node" output="screen">
+	    <param name="frame_id" value="laser_link"/>
+	    <param name="device_ip" value="192.168.42.222"/>
+	    <param name="msop_port" value="2368"/>
+	    <param name="difop_port" value="2369"/>
+	    <param name="add_multicast" value="false"/>
+	    <param name="group_ip" value="224.1.1.2"/>
+	  </node>
+
+You can then launch, by using:
+
+	roslaunch breadcrumb_bringup lidar.launch
