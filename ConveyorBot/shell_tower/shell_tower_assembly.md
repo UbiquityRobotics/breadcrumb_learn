@@ -94,7 +94,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Flat Cables](flat_cables.png)
 
-    Notice how the blue sides of the flat cable connectors are turned. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible (red arrow) with the connector lock pressed in (purple arrows)
+    Notice how the blue sides of the flat cable connectors are turned. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible (red arrow) with the connector lock pressed in (purple arrows).
 
     ![Camera](cam_attach.jpg)
 
@@ -141,7 +141,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![RPI Connect 2](rpi_connect2.png)
 
-3. Connect the RPI back into the MCB board
+3. Connect the RPI back into the MCB board. Make very sure that the RPI pins are not off by 1 pin in any direction with respect to the MCB connector! 
 
     ![RPI to MCB](rpi_to_mcb.png)
 
@@ -169,7 +169,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Front Plate](front_plate.png)
 
-7. Mount the charging port cover if its not mounted already.
+7.  Mount the charging port cover if its not mounted already.
 
     ![Charging Cover](charging_cover.png)
 
