@@ -7,13 +7,15 @@ author: Janez Cimerman, Kristjan Povše
 
 #### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
-## Shell and Tower assembly instructions
+## Shell and Tower assembly instructions - WITHOUT SONARS
+
+Shell and Tower assebly with sonars - TBA
 
 ### Before you begin: 
 
-a) **!!! ALWAYS DISCONNECT THE CABLES FROM THE BATTERIES BEFORE DOING ANYTHING WITH ELECTRONICS !!!** The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables or electronics to prevent any short circuits to the main PCB board. Turning off the robot with the provided main switches is not enough. **Failing to do this can result in injuries and/or fried electronics!**
+a) **!!! ALWAYS DISCONNECT THE CABLE FROM THE BATTERIES BEFORE DOING ANYTHING WITH ELECTRONICS !!!** The most important thing to note, is that you always have to have the batteries physically disconnected, while you are doing anything with the cables or electronics to prevent any short circuits to the main PCB board. Turning off the robot with the provided main switches is not enough. **Failing to do this can result in injuries and/or fried electronics!**
 
-b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times, just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or an SSH connection to shut it down and then cut the power.
+b) If the Raspberry PI has a micro SD card mounted – avoid powering it on and off too many times just by cutting off the power. That can lead to microSD card corruption. Always try to either use touchscreen or an SSH connection to shut it down and then cut the power.
 
 c) Screw types used and their names in the instructions:
 
@@ -21,7 +23,7 @@ c) Screw types used and their names in the instructions:
 
 ### Assembly process Video
 
-If you prefer to watch a assembly video, follow the links below:
+Here are two videos of how assembly looks like, all detailes can be found further in the instructions.
 - https://www.youtube.com/watch?v=RDe5XLQTHwM
 - https://www.youtube.com/watch?v=O-YKXxbponM
 
@@ -29,7 +31,7 @@ If you prefer to watch a assembly video, follow the links below:
 
 <!-- The original plan for ConveyorBot is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
 
-1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – the camera is going to be remounted onto the Tower later. Here if the picture of how the robot looks without the sonars and camera. 
+1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – **the camera is going to be remounted onto the Tower later**. Here if the picture of how the robot looks without the sonars and camera. 
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
 
     ![Base Robot Without The Camera](https://user-images.githubusercontent.com/53408077/127979241-25dc71c2-dab8-4a5d-acd6-eb58c3729061.jpg)
@@ -38,7 +40,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Molex Connector](molex_lidar_conn.jpg)
 
-    In this tutorial we are going to mount it on the left side of the shell (there are more positions available - [see picture](lidar_mounts2.png)). Guide the lidar cable through the sheet metal holder hole, like shown in the picture. 
+    In this tutorial we are going to mount it on the left side of the shell (but there are other lidar positions available - [see picture](lidar_mounts2.png)). Guide the lidar cable through the sheet metal holder hole, like shown in the picture. 
 
     ![Lidar Cable Guide](https://user-images.githubusercontent.com/53408077/127979821-400f1209-d761-4cf3-9155-169bef946041.jpg)
 
@@ -52,27 +54,31 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Emg Assemble](emg_assemble.jpg)
         
-    Make sure to take note where which cable is going to the emergency and which into the power switch (CABLE COLORS MAY WARY).
+    Plug the black cables into the power switch and red ones into the EMG switch. Use the self-adhesive cable clip to fix the cables in place (red arrow). If the cable clip is not already attached it should be found in one of the zip bags.
 
-    ![Switches Shell Cables](switches_shell_cables.jpg)
+    ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-4. Mount the LIDAR holder using **2xM5 socket screws**.
+4. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
-    ![Lidar Holder](lidar_holder.jpg)
+    ![Lidar and Front plate](lidar_front_plate.jpg)
 
 5. Put the shell on the robot.
 
     ![Shell On Robot](shell_on_robot.png)
 
-6. Connect the shell switches into the switch board – emergency button behind the red switch and square shell switch behind the black one (CABLE COLORS MAY VARY).
+6. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
 
-    ![Switch Connection](switch_connection.jpg)
+    ![Switch Cables](switch_cables.jpg)
+
+    Make sure that the black button here is pressed in while the red one is released.
+
+    ![Switchboard](switchboard.jpg)
 
 7. Connect the LIDAR
 
     ![Lidar Connection](lidar_connection.png)
 
-8.  Screw the LIDAR with **4xM3 socket screws**
+8.  Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag.
 
     ![Lidar Screw](lidar_screw.png)
 
@@ -80,39 +86,44 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
 ### Tower assembly
 
-In this section it is shown how to assemble the Tower 
+1. Some touchscreen parts come pre assembled witch some cables already attached and tucked inside (purple arrow). First unscrew and save 4xM3x15mm screws (red arrows)
 
-1. Take the shown sheet metal parts and use **4xM2 phillips screws** to mount the camera and **4xM3 short socket screws** to mount the touchscreen holders.
+    ![Touchscren pre assebled](touchscreen.jpg)
 
-    ![Touchscreen Holders](touchscreen_holders.png)
-
-1. Connect the two flat cables and one USB cable as shown. Notice how the blue sides of the flat cable connectors are turned – camera outward and screen inward. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible. A lot of times, this connection being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later. Here it is useful to use a sharpie to indicate which flat cable is connected to camera and which to the screen. 
-   
-   Again, the 3 cables that need to be connected:
-   - Screen flat cable (write "screen" on both ends for easier identification)
-   - Camera flat cable (write "camera" on both ends for easier identification)
-   - USB micro cable (to power the touchscreen)
+2. Attach the camera with 4xM2 screws that it came attached to the robot with. If the bolt is hard to screw, simply tighten and untighten it a couple of times until it gets easier. After that attach the flat cable to the camera.
 
     ![Flat Cables](flat_cables.png)
 
-2. Now use the **4xM3 socket screws** to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
+    Notice how the blue sides of the flat cable connectors are turned. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible (red arrow) with the connector lock pressed in (purple arrows)
+
+    ![Camera](cam_attach.jpg)
+
+    Also use a sharpie or some other tool to indicate the camera flat cable to be able to distinguish the cables later.
+ 
+
+3. A lot of times the flat cable connections being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later.
+
+4. Now use the **4xM3x15mm Cap Socket screws** from step 1. to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
 
     ![Screen Back Screw](screen_back.png)
 
 
-3. Use **6xM5 socket screws** to put the two angle parts of the tower together.
+5. Use **6xM5x15mm Cap Socket screws** from TOWER zip bag to put the two angle parts of the tower together. 
+
+    The holes in two parts might not always fully allign if the parts are just out of the box. If that is the case first screw the front two screws tightly and then use a bit of force to also screw the others. The parts should fit together with a bit of effort. 
 
     ![Angle Parts](angle_parts.jpg)
 
-4. Use **4xM3 socket screws** to mount the screen assembly onto the angle assembly. Place the USB cable and screen flat cable into one cable duct (TODO CABLE DUCT ON THE PICS) and the camera flat cable into the other.
+
+6. Use **4xM3x15mm Cap Socket screws** from SCREEN zip bag to mount the screen assembly onto the angle assembly. At this point you can also unglue the protective sticker from the touchscreen if you wish.
 
     ![Screen To Angle](screen_to_angle.jpg)
 
-5. As the last part of the tower assembly, mount the front panel using **4xM3 socket screws**.
+7.  As the last part of the tower assembly, mount the front panel using **4xM3x15mm Cap Socket screws** from SCREEN zip bag.
 
     ![Screen Front Screw](screen_front.jpg)
     
-6. The cables can also be inserted into cable guides.
+8.  The cables can also be inserted into cable guides. 
 
     ![Cable Guides](cable_guides.png)
 
@@ -154,20 +165,20 @@ In this section it is shown how to assemble the Tower
 
     If everything went well touch the camera stream to exit and shutdown the RPI, wait 20 seconds for RPI to properly shutdown and then again disconnect the red battery cable before proceeding.
 
-6. Use **4xM4 socket screws** to mount the front plate.
+6. Use **4xM4x8mm Cap Socket screws** which you unscrewed before to mount the front plate back.
 
     ![Front Plate](front_plate.png)
 
-7. Mount the charging port cover.
+7. Mount the charging port cover if its not mounted already.
 
     ![Charging Cover](charging_cover.png)
 
 
-8.  Use **6xM6 socket screws** to mount the tower and the shell to the robot. 
+8.  Use **6xM6x15mm Cap Socket screws** from TOWER zip bag to mount the tower and the shell to the robot. 
 
     ![Tower to Shell Mount](mount_tower_to_shell.png)
 
-    You can use **10xM5 button socket screws** and **4xM5 socket screws** to mount the shelves.
+    You can use **4xM5x15mm Cap Socket screws** to mount the angle shelf holder and **10xM5x15mm button socket screws** to mount the two shelves.
 
     ![Shelves Mount](shelves_mount.png)
 
@@ -188,43 +199,28 @@ In this section it is shown how to assemble the Tower
         lidar: {'position' : 'shell_left'} # possible: none, top_plate, shell_left, shell_right, shell_center, tower_center
 
 
-11. You can now reconnect the battery with the red connector, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector.
-
-
+11. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector.
 
 ## Bolt BOM
-### Screen
-- 4xM3x10mm Cap socket - Screen Top
-- 4xM3x10mm Cap socket - Screen Base
-- 4xM3x10mm Cap socket - Screen to base
-- 4xM3x4mm Cap socket - Screen to holders
-- 4xM2 Philips round - Camera
-
-### Tower
-- 5xM5x10mm Button socket - Bottom shelf
-- 5xM5x10mm Button socket - Top shelf
-- 4xM5x14mm Cap Socket - Angle shelf holder
-- 6xM6x15mm Cap Socket - Mounting tower onto the shell
-
-### Shell
-- 4xM4x12mm Cap socket - Shell side cover
-- 4xM4x12mm Cap Socket - Front cover
-- 2xM4x13mm Thumb screw - front charging cover (with black plastic for easy twisting)
-- 2xM5x14mm Cap Socket - Lidar holder to shell
-- 4xM3x8mm Cap Socket - Lidar screws
-- 3x Grommet (black rubber to cover lidar holes with)
-
+  - 3x Grommet 20mm (black rubber to cover lidar holes with) LINK
+  - 4x 	M6 x 2-2.5mm thick washers -  temporary replacement for Shell Distancers (2-2.5mm thickness whichever is available) LINK
+  - 4x	M3x5mm Cap Socket
+  - 12x	M3x15mm Cap Socket
+  - 4x	M3x8mm Cap Socket
+  - 8x	M4x8mm Cap Socket
+  - 2x	M4x8-10mm Thumb Screw (8 or 10 mm whichever is available)
+  - 12x	M5x15mm Cap Socket
+  - 10x	M5x15mm Button Socket
+  - 6x	M6x15mm Cap Socket
 ## Electrical BOM
-- 1x Emergency switch
-- 1x Emergency switch cable
-- 1x Shell Power switch
-- 1x Shell Power switch cable
-- 1x USB mcro cable
-- 2x Flat cable 1m
+  - 1x Touchscreen
+  - 1x Emergency switch custom cable (red wires)
+  - 1x Power switch custom cable (black wires)
+  - 1x Black Shell Power switch
+  - 1x USB mcro cable 1m
+  - 2x Flat cable 1m
+  - 1x Adhesive Cable clip
 ## Mechanical Parts BOM
-
-![Mechanical Parts](mechanical_parts.jpg)
-
   1. 1x Shell
   2. 1x Lidar Mount
   3. 1x Touchscreen Back Cover
@@ -238,3 +234,5 @@ In this section it is shown how to assemble the Tower
   11. 1x Battery Shell Cover
   12. 2x Touchscreen Holders
   13. 2x Shell Distancers
+
+![Mechanical Parts](mechanical_parts.jpg)
