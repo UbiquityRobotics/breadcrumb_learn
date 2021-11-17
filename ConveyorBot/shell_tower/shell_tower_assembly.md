@@ -86,7 +86,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
 ### Tower assembly
 
-1. Some touchscreen parts come pre assembled witch some cables already attached and tucked inside (purple arrow). First unscrew and save 4xM3x15mm screws (red arrows)
+1. Some touchscreen parts come pre assembled witch some cables already attached and tucked inside (purple arrow). First unscrew and save **4xM3x15mm screws** (red arrows)
 
     ![Touchscren pre assebled](touchscreen.jpg)
 
@@ -153,10 +153,10 @@ Note the batteries orientation - they need to have terminals at the back of the 
     
     1.) first make sure emergency switch is pressed inside and square switch is switched off, 
     
-    2.)connecting the RED battery cable connector, 
+    2.) connecting the battery cable connector, 
     
-    3.) switching on the square switch on the shell. The screen should be lighting up and after the robot boots, you should see camera stream on the WebApp. If anything does not work, the fault, most probably is the bad connections of the flat cables – recheck those. Turn off the robot and disconnect the RED battery connector before continuing.
- 
+    3.) switching on the square switch on the shell. 
+    
     The screen should be lighting up and after the robot boots you should see camera stream by clicking the Screen icon on the Conveyorbot app. The camera stream might not show up immediately - please wait at least until the battery icon shows some battery charge. If anything does not work, the fault, most probably is the bad connections of the flat cables – recheck those. Turn off the robot and disconnect the RED battery connector before continuing.
 
     ![Connection Test](connection_test.png)
@@ -202,8 +202,8 @@ Note the batteries orientation - they need to have terminals at the back of the 
 11. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector.
 
 ## Bolt BOM
-  - 3x Grommet 20mm (black rubber to cover lidar holes with) LINK
-  - 4x 	M6 x 2-2.5mm thick washers -  temporary replacement for Shell Distancers (2-2.5mm thickness whichever is available) LINK
+  - 3x Grommet 20mm (black rubber to cover lidar holes with)
+  - 4x 	M6 x 2-2.5mm thick washers -  temporary replacement for Shell Distancers (2-2.5mm thickness whichever is available)
   - 4x	M3x5mm Cap Socket
   - 12x	M3x15mm Cap Socket
   - 4x	M3x8mm Cap Socket
@@ -221,18 +221,18 @@ Note the batteries orientation - they need to have terminals at the back of the 
   - 2x Flat cable 1m
   - 1x Adhesive Cable clip
 ## Mechanical Parts BOM
-  1. 1x Shell
-  2. 1x Lidar Mount
-  3. 1x Touchscreen Back Cover
-  4. 1x Tower Angle Front
-  5. 1x Touchscreen Front Cover
-  6. 1x Top Shelf Holder
-  7. 1x Tower Angle Bottom
-  8. 2x Shelves
-  9. 1x Front Shell Cover
-  10. 1x Front Charger Cover
-  11. 1x Battery Shell Cover
-  12. 2x Touchscreen Holders
-  13. 2x Shell Distancers
+1. 1x Shell
+2. 1x Lidar Mount
+3. 1x Touchscreen Back Cover
+4. 1x Tower Angle Front
+5. 1x Touchscreen Front Cover
+6. 1x Top Shelf Holder
+7. 1x Tower Angle Bottom
+8. 2x Shelves
+9. 1x Front Shell Cover
+10. 1x Front Charger Cover
+11. 1x Battery Shell Cover
+12. 2x Touchscreen Holders
+13. 2x Shell Distancers
 
 ![Mechanical Parts](mechanical_parts.jpg)
