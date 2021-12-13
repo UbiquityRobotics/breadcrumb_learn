@@ -78,18 +78,17 @@ What tools will be needed to assemble the Breadcrumb together:
 
 ### Assembly process
 
-<!-- The original plan for ConveyorBot is that is works only with sonars (for safety stopping) but they really are not reliable so we are also including the LIDAR into the design for now so we have a safe alternative at least for the first couple of customers -->
-
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – **the camera is going to be remounted onto the Tower later**. Here if the picture of how the robot looks without the sonars and camera. 
-Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
+   
+    Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy reconnecting of main battery cable after the shell is mounted).
 
     ![Base Robot Without The Camera](magni_wo_camera.png)
 
-1. Take lidar cable and route the MOLEX and ethernet as shown
+2. Take lidar cable and route the MOLEX and ethernet as shown
 
     ![Lidar cabling](lidar_cabling.jpg)
 
-2. Connect the MOLEX power connector to the MCB (like shown with green arrow). Do not plug it into the connector with the red cross. Next plug the LAN connector into the RPI LAN port (purple). Notice also that the other end of the LIDAR cable is routed from battery compartment through the spacer hole (yellow arrow).
+3. Connect the MOLEX power connector to the MCB (like shown with green arrow). Do not plug it into the connector with the red cross. Next plug the LAN connector into the RPI LAN port (purple). Notice also that the other end of the LIDAR cable is routed from battery compartment through the spacer hole (yellow arrow).
 
     ![Lidar cabling 2](lidar_cabling2.jpg)
 
@@ -103,7 +102,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Lidar cabling 3](lidar_cabling3.jpg)
 
-3. Now prepare the shell by mounting the two shell switches. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it apart. Put the "mushroom" part through the hole in the shell like shown.
+4. Now prepare the shell by mounting the two shell switches. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it apart. Put the "mushroom" part through the hole in the shell like shown.
 
     ![Disassembled ESTOP](https://user-images.githubusercontent.com/53408077/127981007-8b6c83c5-acd2-4087-aebe-32a92b743f72.jpg)
 
@@ -116,15 +115,15 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-4. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
+5. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
     ![Lidar and Front plate](lidar_front_plate.jpg)
 
-1. Turn the shell and use some paper tape to glue the 4 washers from zip bag SHELL over the corner holes - make sure the screws from the top will be able to go through both the shell hole and the washer. **This is a temporary solution to have the shell mounted higher so the sonars are not obstructed by the shell. In the future these washers are going to be replaced by a dedicated part.**
+6. Turn the shell and use some paper tape to glue the 4 washers from zip bag SHELL over the corner holes - make sure the screws from the top will be able to go through both the shell hole and the washer. **This is a temporary solution to have the shell mounted higher so the sonars are not obstructed by the shell. In the future these washers are going to be replaced by a dedicated part.**
 
     ![Washers](washers.jpg)
 
-2. Put the shell on the robot. Be careful that you don't bend the sonars when putting the shell onto the robot (red lines). We suggest first putting the front part over the sonars like shown. 
+7. Put the shell on the robot. Be careful that you don't bend the sonars when putting the shell onto the robot (red lines). We suggest first putting the front part over the sonars like shown. 
 
     ![Mounting the shell](shell_mounting_2.jpg)
 
@@ -133,7 +132,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
     ![Mounting shell 2](shell_mounting_3.jpg)
     <!-- ![Shell On Robot](shell_on_robot.png) -->
 
-3. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
+8. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
 
     ![Switch Cables](switch_cables.jpg)
 
@@ -141,11 +140,11 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Switchboard](switchboard.jpg)
 
-4. Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
+9. Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
 
     ![Lidar Connection](lidar_connection.png)
 
-5.  Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag. You can place two screws before moving the lidar into position for easier mounting.
+10. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag. You can place two screws before moving the lidar into position for easier mounting.
 
     ![Lidar screw1](lidar_back_screws.jpg)
 
