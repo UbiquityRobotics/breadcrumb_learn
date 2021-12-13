@@ -7,9 +7,7 @@ authors: Janez Cimerman, Kristjan Povše
 
 #### &uarr;[top](https://ubiquityrobotics.github.io/ConveyorBot_learn/)
 
-## Shell and Tower assembly instructions - WITHOUT SONARS
-
-Shell and Tower assebly with sonars - TBA
+## Shell and Tower assembly instructions
 
 ### Before you begin: 
 
@@ -85,23 +83,32 @@ What tools will be needed to assemble the Breadcrumb together:
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – **the camera is going to be remounted onto the Tower later**. Here if the picture of how the robot looks without the sonars and camera. 
 Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy of reconnecting main power cable when shell in mounted).
 
-    ![Base Robot Without The Camera](https://user-images.githubusercontent.com/53408077/127979241-25dc71c2-dab8-4a5d-acd6-eb58c3729061.jpg)
+    ![Base Robot Without The Camera](magni_wo_camera.png)
 
-1. Connect the LIDAR molex power connector (the one closest to the RPI which has AUX written ot top of it) like shown and the LAN cable into the RPI LAN port.
+1. Take lidar cable and route the molex and ethernet as shown
 
-    ![Molex Connector](molex_lidar_conn.jpg)
+    ![Lidar cabling](lidar_cabling.jpg)
 
-    In this tutorial we are going to mount it on the left side of the shell (but there are other lidar positions available - [see picture](lidar_mounts2.png)). Guide the lidar cable through the sheet metal holder hole, like shown in the picture. 
+2. Connect the MOLEX power connector to the MCB (like shown with green arrow). Do not plug it into the connector with the red cross. Next plug the LAN connector into the RPI LAN port (purple). Notice also that the other end of the LIDAR cable is routed from battery compartment through the spacer hole (yellow arrow).
 
-    ![Lidar Cable Guide](https://user-images.githubusercontent.com/53408077/127979821-400f1209-d761-4cf3-9155-169bef946041.jpg)
+    ![Lidar cabling 2](lidar_cabling2.jpg)
 
+    
+    
+    Here we are going to mount the lidar on LEFT side from the robots prespective, but there are other lidar positions available - [see picture](lidar_mounts2.png). If another position is prefered, please route the lidar calbes accordingly.
 
-2. Mount the two shell switches and connect the cables. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it upwards. Put the "mushroom" part thro the hole in the shell like shown.
+    ![Coordinate system](coordinates.jpg)
+
+    Lidar connector needs to be guided from the battery conpartment **through** the spacer hole (purple arrow) under the camera mount. It needs to come out **over** the sonar board (green arrow). Pull the cable out **only a short amount** like shown (stop at red line).
+
+    ![Lidar cabling 3](lidar_cabling3.jpg)
+
+3. Now prepare the shell by mounting the two shell switches. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it apart. Put the "mushroom" part through the hole in the shell like shown.
 
     ![Disassembled ESTOP](https://user-images.githubusercontent.com/53408077/127981007-8b6c83c5-acd2-4087-aebe-32a92b743f72.jpg)
 
 
-    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without unnecessary force). Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
+    Assemble the estop button by pushing it lightly inwards and turn it clockwise (This part should go together easily without force). Note that the shell does not have screw holes for mounting the ESTOP button, the screws just push on the shell to keep the button in place.
 
     ![Emg Assemble](emg_assemble.jpg)
         
@@ -109,15 +116,24 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-3. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
+4. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
     ![Lidar and Front plate](lidar_front_plate.jpg)
 
-4. Put the shell on the robot.
+1. Turn the shell and use some paper tape to glue the 4 washers from zip bag SHELL over the corner holes - make sure the screws from the top will be able to go throuhg both the shell hole and the washer. **This is a temporary solution to have the shell mounted higher so the sonars are not obstructed by the shell. In the future these washers are going to be replaced by a dedicated part.**
 
-    ![Shell On Robot](shell_on_robot.png)
+    ![Washers](washers.jpg)
 
-5. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
+2. Put the shell on the robot. Be careful that you dont bend the sonars when putting the shell onto the robot (red lines). We suggest first putting the front part over the sonars like shown. 
+
+    ![Mounting the shell](shell_mounting_2.jpg)
+
+    Also use this chance to route the red and black cables through the sonar hole (green arrow). The robot with shell fully mounted should look like shown. Shell should rest fully on the magni with NO cables in between them (lidar cable and EMG switch cabeles can be problematic).
+
+    ![Mounting shell 2](shell_mounting_3.jpg)
+    <!-- ![Shell On Robot](shell_on_robot.png) -->
+
+3. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
 
     ![Switch Cables](switch_cables.jpg)
 
@@ -125,11 +141,13 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Switchboard](switchboard.jpg)
 
-6. Connect the LIDAR
+4. Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
 
     ![Lidar Connection](lidar_connection.png)
 
-7.  Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag.
+5.  Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag. You can place two screws before moving the lidar into position for easier mounting.
+
+    ![Lidar screw1](lidar_back_screws.jpg)
 
     ![Lidar Screw](lidar_screw.png)
 
@@ -137,7 +155,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
 ### Tower assembly
 
-1. Some touchscreen parts come pre assembled witch some cables already attached and tucked inside (purple arrow). First unscrew and save **4xM3x15mm screws** (red arrows)
+1. Some touchscreen parts come pre-assembled and some cables already attached and tucked inside the assembly (purple arrow). First unscrew and save **4xM3x15mm screws** (red arrows)
 
     ![Touchscren pre assebled](touchscreen.jpg)
 
@@ -145,7 +163,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
 
     ![Flat Cables](flat_cables.png)
 
-    Notice how the blue sides of the flat cable connectors are turned. Please also make extra sure, that the flat cable connectors are well connected and as fully pressed into the connectors as possible (red arrow) with the connector lock pressed in (purple arrows).
+    Notice how the blue sides of the flat cable connectors are turned. Please also make extra sure, that the flat cable connectors of BOTH camera and touchscreen are well connected and as fully pressed into the connectors as possible (red arrow) with the connector lock pressed in (purple arrows).
 
     ![Camera](cam_attach.jpg)
 
@@ -206,7 +224,7 @@ Note the batteries orientation - they need to have terminals at the back of the 
     
     1.) first make sure emergency switch is pressed inside and square switch is switched off, 
     
-    2.) connecting the battery cable connector, 
+    2.) connecting the battery cable connector through the battery opening (green square), 
     
     3.) switching on the square switch on the shell. 
     
