@@ -205,21 +205,27 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Tower On Shell](tower_on_shell.png)
 
-3. If you haven't already, please **MAKE SURE THE BATTERIES ARE DISCONNECTED FROM THE ROBOT** before continuing. Connect the two flat cables to Raspberry Pi (RPi). The screen flat cable connector is at the back and for camera in the middle of RPi. Notice that the blue part of the flat cable connector is pointed backward (touching black latch) for the screen cable and to the front for the camera cable. Make sure that these cables are pushed into the RPI as far as possible – a lot of people have problems when these connectors are not properly connected.
+3. If you haven't already, please **MAKE SURE THE BATTERIES ARE DISCONNECTED FROM THE ROBOT** before continuing.
+
+1. Disconnect the Raspberry Pi from the MCB and route the flat cables BEHIND the sonars as shown.
+
+    ![Flat cable routing](flat_cable_rounting.jpg)
+   
+2. Connect the two flat cables to Raspberry Pi (RPi). The screen flat cable connector is at the back and for camera in the middle of RPi. Notice that the blue part of the flat cable connector is pointed backward (touching black latch) for the screen cable and to the front for the camera cable. Make sure that these cables are pushed into the RPI as far as possible – a lot of people have problems when these connectors are not properly connected.
 
     ![RPI Connect 1](rpi_connect1.png)
 
     ![RPI Connect 2](rpi_connect2.png)
 
-4. Connect the RPI back into the MCB board. Make very sure that the RPI pins are not off by 1 pin in any direction with respect to the MCB connector! 
+3. Connect the RPI back into the MCB board. Make very sure that the RPI pins are not off by 1 or more pins in any direction with respect to the MCB connector! 
 
-    ![RPI to MCB](rpi_to_mcb.png)
+    ![RPI to MCB](rpi_to_mcb.jpg)
 
-5. Connect and fold the USB cable
+4. Connect and fold the USB cable
 
     ![USB cable](usb_cable.jpg)
 
-6.  Before screwing the rest of the robot, try powering it up, to see if the screen and the camera work. You can do that by 
+5.  Before screwing the rest of the robot, try powering it up, to see if the screen and the camera work. You can do that by 
     
     1.) first make sure emergency switch is pressed inside and square switch is switched off, 
     
@@ -235,16 +241,16 @@ What tools will be needed to assemble the Breadcrumb together:
 
     If everything went well touch the camera stream to exit and shutdown the RPI, wait 20 seconds for RPI to properly shutdown and then again disconnect the red battery cable before proceeding.
 
-7.  Use **4xM4x8mm Cap Socket screws** which you unscrewed before to mount the front plate back.
+6.  Use **4xM4x8mm Cap Socket screws** which you unscrewed before to mount the front plate back.
 
     ![Front Plate](front_plate.png)
 
-8.  Mount the charging port cover if its not mounted already.
+7.  Mount the charging port cover if its not mounted already.
 
     ![Charging Cover](charging_cover.png)
 
 
-9.  Use **6xM6x15mm Cap Socket screws** from TOWER zip bag to mount the tower and the shell to the robot. 
+8.  Use **6xM6x15mm Cap Socket screws** from TOWER zip bag to mount the tower and the shell to the robot. 
 
     ![Tower to Shell Mount](mount_tower_to_shell.png)
 
@@ -253,14 +259,14 @@ What tools will be needed to assemble the Breadcrumb together:
     ![Shelves Mount](shelves_mount.png)
 
 
-10. Mount black grommets into the empty LIDAR connector holes. Side point: more LIDAR positions are available. All those can be used, but then an easy parameter change needs to be done in the system of the robot.
+9.  Mount black grommets into the empty LIDAR connector holes. Side point: more LIDAR positions are available. All those can be used, but then an easy parameter change needs to be done in the system of the robot.
 
     ![Lidar Mounts](lidar_mounts.png)
 
     ![Lidar Mounts 2](lidar_mounts2.png)
 
 
-11. Wherever you mounted your lidar, make sure the system knows about its location on the robot by SSH-ing into the robot and then editing the following folder
+10. Wherever you mounted your lidar, make sure the system knows about its location on the robot by SSH-ing into the robot and then editing the following folder
  
         sudo nano /etc/ubiquity/robot.yaml
     
@@ -269,4 +275,4 @@ What tools will be needed to assemble the Breadcrumb together:
         lidar: {'position' : 'shell_left'} # possible: none, top_plate, shell_left, shell_right, shell_center, tower_center
 
 
-12. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector. The Conveyorbot assembly is now complete.
+11. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector. The Conveyorbot assembly is now complete.
