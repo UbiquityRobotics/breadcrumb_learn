@@ -132,7 +132,9 @@ What tools will be needed to assemble the Breadcrumb together:
     ![Mounting shell 2](shell_mounting_3.jpg)
     <!-- ![Shell On Robot](shell_on_robot.png) -->
 
-8. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one.
+8. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one. 
+    
+    There might be a loop cable connected into one of those connectors already. In that case you can disconnect it, but be sure to save it, it might come handy for future uses.
 
     ![Switch Cables](switch_cables.jpg)
 
@@ -140,7 +142,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Switchboard](switchboard.jpg)
 
-9. Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
+9.  Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
 
     ![Lidar Connection](lidar_connection.png)
 
