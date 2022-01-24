@@ -28,14 +28,10 @@ Here are two videos of how assembly looks like so you know what to expect. All d
 ### Bolt BOM
   - 3x Grommet 20mm (black rubber to cover lidar holes with)
   - 4x 	M6 x 2-2.5mm thick washers -  temporary replacement for Shell Distancers (2-2.5mm thickness whichever is available)
-  - 4x	M3x5mm Cap Socket
-  - 12x	M3x15mm Cap Socket
-  - 4x	M3x8mm Cap Socket
-  - 8x	M4x8mm Cap Socket
+  - 4x	M3x5mm Cap Socket (4xtouchscreen)
+  - 30x	M3x8mm Cap Socket (6xlidar + 12xtouchscreen + 4xfrontp. + 4xsidep.+ 8xbrakes)
   - 2x	M4x8-10mm Thumb Screw (8 or 10 mm whichever is available)
-  - 12x	M5x15mm Cap Socket
-  - 10x	M5x15mm Button Socket
-  - 6x	M6x15mm Cap Socket
+  - 24x	M6x12mm Button Socket (6xtowerangle + 6xshell + 12xshelfs)
 ### Electrical BOM
   - 1x Touchscreen
   - 1x Emergency switch custom cable (red wires)
@@ -58,6 +54,7 @@ Here are two videos of how assembly looks like so you know what to expect. All d
 11. 1x Battery Shell Cover
 12. 2x Touchscreen Holders
 13. 2x Shell Distancers (if these are not found in the package, you should have gotten extra washers in the SHELL bolts bag)
+14. 2x Brake (TODO image)
 
 ![Mechanical Parts](mechanical_parts.jpg)
 
@@ -70,7 +67,6 @@ What tools will be needed to assemble the Breadcrumb together:
  - small screwdriver (for M2 camera bolts)
  - big screwdriver (for mounting emergency switch)
  - M3 Allen key
- - M5 Allen key
  - M6 Allen key 
  - Paper tape
 
@@ -115,7 +111,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-5. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
+5. Mount the LIDAR holder using **2xM3x8mm Cap Socket** screws from zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
     ![Lidar and Front plate](lidar_front_plate.jpg)
 
@@ -146,7 +142,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Lidar Connection](lidar_connection.png)
 
-10. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag. You can place two screws before moving the lidar into position for easier mounting.
+10. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from zip bag. You can place two screws before moving the lidar into position for easier mounting.
 
     ![Lidar screw1](lidar_back_screws.jpg)
 
@@ -156,7 +152,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
 ### Tower assembly
 
-1. Some touchscreen parts come pre-assembled and some cables already attached and tucked inside the assembly (purple arrow). First unscrew and save **4xM3x15mm screws** (red arrows)
+1. Some touchscreen parts come pre-assembled and some cables already attached and tucked inside the assembly (purple arrow). First unscrew and save **4xM3x8mm screws** (red arrows)
 
     ![Touchscreen pre assembled](touchscreen.jpg)
 
@@ -171,35 +167,37 @@ What tools will be needed to assemble the Breadcrumb together:
     Also use a sharpie or some other tool to indicate the camera flat cable to be able to distinguish the cables later.
  
 
-3. A lot of times the flat cable connections being not adequate or faulty is the reason screen or camera don't work. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later.
+3. **IMPORTANT NOTE:** A lot of times the **flat cable connections** being not adequate or faulty is **the reason screen or camera don't work**. You can test this connections (by following steps in the [Connecting The Tower To Shell](#connecting-the-tower-to-shell) Section below) by connecting to RPi and powering it up to see if the screen and camera are working - to avoid having to reassemble everything up again later.
 
-4. Now use the **4xM3x15mm Cap Socket screws** from step 1. to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
+4. Now use the **4xM3x8mm Cap Socket screws** from step 1. to mount the screen into the back plate. You can use a zip tie to mount the USB cable into the housing using the square holes.
 
     ![Screen Back Screw](screen_back.png)
 
 
-5. Use **6xM5x15mm Cap Socket screws** from TOWER zip bag to put the two angle parts of the tower together. 
+5. Use **6xM6x12mm Button Socket screws** from zip bag to put the two angle parts of the tower together. 
 
     The holes in two parts might not always fully align if the parts are just out of the box. If that is the case first screw the front two screws tightly and then use a bit of force to also screw the others. The parts should fit together with a bit of effort. 
 
     ![Angle Parts](angle_parts.jpg)
 
 
-6. Use **4xM3x15mm Cap Socket screws** from SCREEN zip bag to mount the screen assembly onto the angle assembly. At this point you can also unglue the protective sticker from the touchscreen if you wish.
+6. Use **4xM3x8mm Cap Socket screws** from zip bag to mount the screen assembly onto the angle assembly. At this point you can also unglue the protective sticker from the touchscreen if you wish.
 
     ![Screen To Angle](screen_to_angle.jpg)
 
-7.  As the last part of the tower assembly, mount the front panel using **4xM3x15mm Cap Socket screws** from SCREEN zip bag.
+7.  As the last part of the tower assembly, mount the front panel using **4xM3x8mm Cap Socket screws** from zip bag.
 
     ![Screen Front Screw](screen_front.jpg)
     
-8.  The cables can also be inserted into cable guides. 
+8.  The cables should also be inserted into cable guides. 
 
     ![Cable Guides](cable_guides.png)
 
 ***
 
 ### Connecting The Tower To Shell
+
+**TODO all pictures with M6 screws are with CAP socket, they should be replaced with pictures with M6 BUTTON socket.**
 
 1. If you haven't already, burn the latest Conveyorbot image onto a MicroSD card. You do that by first downloading the latest Conveyorbot image here(TODO add link). Then take the MicroSD card out of Raspberry Pi and insert it into your computer. Flash the downloaded image onto the microSD card using either GNOME Disks tool, [Etcher](https://www.balena.io/etcher/) or [Win32DiskImager](https://win32diskimager.download/). 
 
@@ -252,11 +250,11 @@ What tools will be needed to assemble the Breadcrumb together:
     ![Charging Cover](charging_cover.png)
 
 
-8.  Use **6xM6x15mm Cap Socket screws** from TOWER zip bag to mount the tower and the shell to the robot. 
+8.  Use **6xM6x12mm Button Socket screws** from zip bag to mount the tower and the shell to the robot. 
 
     ![Tower to Shell Mount](mount_tower_to_shell.png)
 
-    You can use **4xM5x15mm Cap Socket screws** to mount the angle shelf holder and **10xM5x15mm button socket screws** to mount the two shelves.
+    You can use **4xM6x12mm Button Socket screws** to mount the angle shelf holder and **10xM6x12mm Button socket screws** to mount the two shelves.
 
     ![Shelves Mount](shelves_mount.png)
 
