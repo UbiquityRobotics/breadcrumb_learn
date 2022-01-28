@@ -80,6 +80,10 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Base Robot Without The Camera](magni_wo_camera.png)
 
+5. Now use zip ties to mount the black and brown cables like shown on the picture. Connect the other end of brown cable to the black terminal on the battery. Do not connect the black and brown together yet.
+   
+   ![Brown Cable](brown_cable.jpg)
+
 2. Take lidar cable and route the MOLEX and ethernet as shown
 
     ![Lidar cabling](lidar_cabling.jpg)
@@ -111,15 +115,16 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-5. Mount the LIDAR holder using **2xM3x8mm Cap Socket** screws from zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
+
+6. Mount the LIDAR holder using **2xM3x8mm Cap Socket** screws from zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
     ![Lidar and Front plate](lidar_front_plate.jpg)
 
-6. Turn the shell and use some paper tape to glue the 4 washers from zip bag SHELL over the corner holes - make sure the screws from the top will be able to go through both the shell hole and the washer. **This is a temporary solution to have the shell mounted higher so the sonars are not obstructed by the shell. In the future these washers are going to be replaced by a dedicated part.**
+7. Turn the shell and use some paper tape to glue the 4 washers from zip bag SHELL over the corner holes - make sure the screws from the top will be able to go through both the shell hole and the washer. **This is a temporary solution to have the shell mounted higher so the sonars are not obstructed by the shell. In the future these washers are going to be replaced by a dedicated part.**
 
     ![Washers](washers.jpg)
 
-7. Put the shell on the robot. Be careful that you don't bend the sonars when putting the shell onto the robot (red lines). We suggest first putting the front part over the sonars like shown. 
+8. Put the shell on the robot. Be careful that you don't bend the sonars when putting the shell onto the robot (red lines). We suggest first putting the front part over the sonars like shown. 
 
     ![Mounting the shell](shell_mounting_2.jpg)
 
@@ -128,7 +133,7 @@ What tools will be needed to assemble the Breadcrumb together:
     ![Mounting shell 2](shell_mounting_3.jpg)
     <!-- ![Shell On Robot](shell_on_robot.png) -->
 
-8. Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one. 
+9.  Connect the shell switches into the switch board – emergency button behind the red switch and square power shell switch behind the black one. 
     
     There might be a loop cable connected into one of those connectors already. In that case you can disconnect it, but be sure to save it, it might come handy for future uses.
 
@@ -138,11 +143,11 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Switchboard](switchboard.jpg)
 
-9.  Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
+10. Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
 
     ![Lidar Connection](lidar_connection.png)
 
-10. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from zip bag. You can place two screws before moving the lidar into position for easier mounting.
+11. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from zip bag. You can place two screws before moving the lidar into position for easier mounting.
 
     ![Lidar screw1](lidar_back_screws.jpg)
 
@@ -229,7 +234,9 @@ What tools will be needed to assemble the Breadcrumb together:
     
     1.) first make sure emergency switch is pressed inside and square switch is switched off, 
     
-    2.) connecting the battery cable connector through the battery opening (green square), 
+    2.) connecting the battery cable connector through the battery opening, 
+
+    ![Battery Connecting](connecting_battery.jpg)
     
     3.) switching on the square switch on the shell. 
     
