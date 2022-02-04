@@ -265,7 +265,6 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Shelves Mount](shelves_mount.png)
 
-
 9.  Mount black grommets into the empty LIDAR connector holes. Side point: more LIDAR positions are available. All those can be used, but then an easy parameter change needs to be done in the system of the robot.
 
     ![Lidar Mounts](lidar_mounts.png)
@@ -282,4 +281,17 @@ What tools will be needed to assemble the Breadcrumb together:
         lidar: {'position' : 'shell_left'} # possible: none, top_plate, shell_left, shell_right, shell_center, tower_center
 
 
-11. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector. The Conveyorbot assembly is now complete.
+11. You can now reconnect the battery, power up the robot and begin using it. Remember to every time in the future you need to reconnect something first disconnect the red battery connector. The Conveyorbot assembly is now nearly complete.
+
+---
+
+### Installation of brakes
+
+1. Take the two brakes and screw both brake-ends to be at approximately 5mm distance:
+
+    ![brake_length](brake_screw.png)
+
+2. Screw brakes at both sides of the conveyorbot shell with 8xM3x8mm Cap Socket screws - 4 on each side. The two brakes are mirrored images to fit on each side. The brake is turned correctly when the **red holder** is turned **upwards when brake is released**.
+
+    ![brake_install](brake_install1.png)
+    ![brake_install2](brake_install2.png)
