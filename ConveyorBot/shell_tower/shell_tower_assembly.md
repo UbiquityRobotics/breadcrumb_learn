@@ -287,7 +287,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
 ### Installation of brakes
 
-1. Take the two brakes and screw both brake-ends to be at approximately 5mm distance:
+1. Take the two brakes and screw both brake-ends to be at approximately 5mm distance.
 
     ![brake_length](brake_screw.png)
 
@@ -295,3 +295,5 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![brake_install](brake_install1.png)
     ![brake_install2](brake_install2.png)
+
+3. Now release both brakes (turn the red holder upward) and check that the brake rubber doesn't touch the wheel. If it does, screw the same screw as in step 1 to adjust its position.
