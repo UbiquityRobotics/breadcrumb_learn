@@ -65,7 +65,7 @@ Since netplan is being used we also need apply the changes:
 This will flag anyy errors in your file (yaml is space sensitive).       
 Check to see if things are correct with 
 
-	ipconfig 
+	ifconfig 
        
 and ping to 192.168.42.222 to see if there is a successful transfer of packets:
 
