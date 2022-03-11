@@ -22,6 +22,9 @@ and make the eth0 interface looks like
 
 After that REBOOT the robot - for the changes to apply.
 
+sudo apt install ros-noetic-pcl-ros  (if not already present)
+sudo apt install ros-noetic-laser-filters
+
 ## Troubleshooting
 
 Once network is setup, you should be able to see LiDAR scan points values by typing into the terminal (on robot):
@@ -86,4 +89,5 @@ Also make sure the parameters in the `/breadcrumb_bringup/launch/lidar.launch` a
 
 You can then launch, by using:
 
-	roslaunch breadcrumb_bringup lidar.launch
+	roslaunch breadcrumb_bringup lidar.launch  (or if non-breadcrumb robot - from appropriate location.
+	
