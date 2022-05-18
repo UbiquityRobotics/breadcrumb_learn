@@ -24,8 +24,9 @@ Each marker has a unique id, which is written on it. This way marker types are c
 
 The most important things to remember before setting up the route of markers are:
 - Each marker should point in the direction of the next one
-- TURN markers should be used to change driving direction (In the crossroads - multiple markers at one position pointing in different directions)
+- TURN markers should be used to change driving direction (At crossroads - multiple markers at one position pointing in different directions)
 - BIDIRECTIONAL markers should be used for two-way routes, where robot can drive in both directions and not for changing the driving direction. In other words, robot should never come sideways to the BIDIRECTIONAL marker, since it may turn in the wrong direction as intended.
+- If you expect to have more than one robot on a route, you should have a seperate outbound and return path otherwise robots may meet head to head, which will cause both robots to stop. BIDIRECTIONAL markers should only be used on branches where you expect only one robot to be present in that branch at a time
 - GO marker should be used for one-way routes, where robot can drive only in one direction
 - Before sticking markers to the ground using their strong adhesive back side, it is recommended to stick them to the ground using some tape, so that you can test if your route setup is correct. Be careful that you don't cover the inner black part of the marker with the tape. After you've made sure the route is setup correctly, you can stick the markers by removing their back side. Stick the markers onto clean floor.
 
@@ -38,7 +39,7 @@ An example of a simple marker layout is shown in the figure below.
 
 ## Ignored opposite markers
 
-By default, the GO and STOP markers which are rotated in the opposite direction as the robot is driving are ignored. This is required for the Circuit route to work correctly when inbound and outbound paths are close together (refer to the next section). Otherwise, if the robot is driving on the inbound path, it might detect and follow the opposing markers from the outbound path.
+By default, the GO and STOP markers which are rotated in the opposite direction as the robot is driving are ignored. This is so that the outbound path and return paths work correctly when inbound and outbound paths are close together (refer to the next section). Otherwise, if the robot is driving on the inbound path, it might detect and follow the opposing markers from the outbound path.
 
 ## Circuit route
 
