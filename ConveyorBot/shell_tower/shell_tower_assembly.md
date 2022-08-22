@@ -78,29 +78,40 @@ What tools will be needed to assemble the Breadcrumb together:
 
 ### Assembly process
 
+There are two different LIDARs that can be mounted onto the robot - long range LIDAR (LS LIDAR) or short range LIDAR (LD LIDAR). Depending on which LIDAR you have, different instructions should be followed. Subsections markerd with "LS" will present instructions for long range LIDAR and the ones with "LD" for short range LIDAR. "BOTH" mark should be performed for both lidars.
+
 1. Remove the top plate and the Sonar board from the robot by unscrewing it and disconnecting the flat cable. Also unscrew the camera from its holder (**4xM2 screws**) – **the camera is going to be remounted onto the Tower later**. Here if the picture of how the robot looks without the sonars and camera. 
    
     Note the batteries orientation - they need to have terminals at the back of the robot as shown (This is to ensure easy reconnecting of main battery cable after the shell is mounted).
 
     ![Base Robot Without The Camera](magni_wo_camera.png)
 
-2. Take lidar cable and route the MOLEX and ethernet as shown
+2. Install LIDAR wires
+
+   **LS**: Take lidar cable and route the MOLEX and ethernet as shown
 
     ![Lidar cabling](lidar_cabling.jpg)
 
-3. Connect the MOLEX power connector to the MCB (like shown with green arrow). Do not plug it into the connector with the red cross. Next plug the LAN connector into the RPI LAN port (purple). Notice also that the other end of the LIDAR cable is routed from battery compartment through the spacer hole (yellow arrow).
+3. Plug in the LIDAR
+
+   **LS**: Connect the MOLEX power connector to the MCB (like shown with green arrow). Do not plug it into the connector with the red cross. Next plug the LAN connector into the RPI LAN port (purple). Notice also that the other end of the LIDAR cable is routed from battery compartment through the spacer hole (yellow arrow).
 
     ![Lidar cabling 2](lidar_cabling2.jpg)
 
+    **LD**: Connect the USB connector of the cable to a free USB port in the RPi.
+
+    ![Lidar cabling 2.1](lidar_cabling21.jpg)
     
-    
-    Here we are going to mount the lidar on LEFT side from the robots perspective, but there are other lidar positions available - [see picture](lidar_mounts2.png). If another position is preferred, please route the lidar cables accordingly.
+    **BOTH**: Here we are going to mount the lidar on LEFT side from the robots perspective, but there are other lidar positions available - [see picture](lidar_mounts2.png). If another position is preferred, please route the lidar cables accordingly.
 
     ![Coordinate system](coordinates.jpg)
 
     Lidar connector needs to be guided from the battery compartment **through** the spacer hole (purple arrow) under the camera mount. It needs to come out **over** the sonar board (green arrow). Pull the cable out **only a short amount** like shown (stop at red line).
 
-    ![Lidar cabling 3](lidar_cabling3.jpg)
+    **LS**: ![Lidar cabling 3](lidar_cabling3.jpg)
+
+    **LD**: ![Lidar cabling 3.1](lidar_cabling31.jpg)
+
 
 4. Now prepare the shell by mounting the two shell switches. Red ESTOP button is assembled from two separate pieces. To install, first disassemble it by turning red and black "mushroom" part counter-clockwise and pulling it apart. Put the "mushroom" part through the hole in the shell like shown.
 
@@ -115,7 +126,7 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Shell Buttons Clip](shell_buttons_clip.jpg)
 
-5. Mount the LIDAR holder using **2xM5x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
+5. Mount the LIDAR holder using **2xM3x15mm Cap Socket** screws from SHELL zip bag (red arrows). Also unscrew the front plate and save the 4 screws that hold it in place (green arrow).
 
     ![Lidar and Front plate](lidar_front_plate.jpg)
 
@@ -142,15 +153,26 @@ What tools will be needed to assemble the Breadcrumb together:
 
     ![Switchboard](switchboard.jpg)
 
-9.  Connect the LIDAR by pulling the lidar connector through the hole just a bit and then screwing it onto the dedicated thread.
+9.  Connect the LIDAR by pulling the lidar connector through the hole just a bit.
+
+    **LS**: Screw the connector onto the dedicated thread.
 
     ![Lidar Connection](lidar_connection.png)
 
-10. Screw the LIDAR with **4xM3x8mm Cap Socket** screws from the SHELL zip bag. You can place two screws before moving the lidar into position for easier mounting.
+    **LD**: Plug the connector into the lidar.
+    ![Lidar Connection1](lidar_connection1.jpg)
+
+10. Screw the LIDAR with **M3x8mm Cap Socket** screws from the SHELL zip bag. 
+
+    **LS**: You will need 4 screws. You can place two screws before moving the lidar into position for easier mounting.
 
     ![Lidar screw1](lidar_back_screws.jpg)
 
     ![Lidar Screw](lidar_screw.png)
+
+    **LD**: You will need 3 screws.
+
+    ![Lidar Screw1](lidar_screw1.jpg)
 
 ***
 
