@@ -16,6 +16,9 @@ Location of scripts is in ConveyorBot repository in the `ConveyorBot/ConveyorBot
 
 - `ArUco/gen_markers.py` -> generate Aruco markers with frames
 - `STag/gen_markers_autogen.py` -> generate STag markers with frames by generating also the inner part.
+-   *****  this file is not there stag_maker_generator.py is in the STag directory **** 
+-   *****  ALSO NO INSTRUCTIONS ON PROPER SYNTAX OR HOW TO SPECIFY 'hd' FOLDER AND WHICH SET OF MARKERS
+-       expected  is HD, kernelRadius, dilateErodeIterations  NONEWHICH IS EXPLAINED in DOCS *****
 - `STag/gen_markers.py`  -> generate STag markers with frames by getting the inner part from downloaded image library. Download the required images from [here](https://drive.google.com/drive/folders/0ByNTNYCAhWbIV1RqdU9vRnd2Vnc).
 
 Script were tested using python2.7.
