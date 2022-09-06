@@ -28,7 +28,7 @@ Once network is setup, you should be able to see LiDAR scan points values by typ
 
 	rostopic echo /scan
 
-## LiDAR N301 network setup  on Ubuntu 20.04
+## LiDAR UR50 network setup  on Ubuntu 20.04
 
 Ubuntu changed the way to set static IPs when they upgraded to 20.04. 
 To assign a static IP using netplan create/edit the following:
@@ -84,6 +84,5 @@ Also make sure the parameters in the `/breadcrumb_bringup/launch/lidar.launch` a
 	    <param name="group_ip" value="224.1.1.2"/>
 	  </node>
 
-You can then launch, by using:
+You can then launch by using the appropraite file for Magni, Convoyorbot or Ezmap.
 
-	roslaunch breadcrumb_bringup lidar.launch
