@@ -6,7 +6,7 @@
 
 TODO
 
-## LiDAR N301 network setup  on Ubuntu 16.04
+## LiDAR UR50 network setup  on Ubuntu 16.04
 
 In order to make LiDAR work setup static IP
 	
