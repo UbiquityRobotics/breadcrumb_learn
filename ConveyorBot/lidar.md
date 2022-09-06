@@ -85,4 +85,4 @@ Also make sure the parameters in the `/breadcrumb_bringup/launch/lidar.launch` a
 	  </node>
 
 You can then launch by using the appropraite file for Magni, Convoyorbot or Ezmap.
-
+(Added note, on some Raspberry Pi 3s eth0 is not the default name for the ethernet interface, and looks like "enxb827eb7e6a3e" or three letters followed by a MAC address.)  You can check by ifconfig -a to get this interface name.)
