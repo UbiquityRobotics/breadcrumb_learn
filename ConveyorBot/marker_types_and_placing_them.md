@@ -39,17 +39,23 @@ An example of a simple marker layout is shown in the figure below.
 
 ## Ignored opposite markers
 
-By default, the GO and STOP markers which are rotated in the opposite direction as the robot is driving are ignored. This is so that the outbound path and return paths work correctly when inbound and outbound paths are close together (refer to the next section). Otherwise, if the robot is driving on the inbound path, it might detect and follow the opposing markers from the outbound path.
+By default, the GO markers which are rotated in the opposite direction as the robot is driving are ignored. This is so that the outbound path and return paths work correctly when inbound and outbound paths are close together (refer to the next section). Otherwise, if the robot is driving on the inbound path, it might detect and follow the opposing markers from the outbound path.
 
 ## Circuit route
 
-If you want multiple robots to drive on the same marker setup, you should arrange the markers in a so-called "Circuit route", so that the robots won't collide into each other. This type of marker setup is recommended even if you have only one robot, because you never know when you will add another robot to your fleet. The We divide circuit route into an inbound and an outbound path. Inbound serves as the path for robots to drive to the goal and the outbound is the path which is used for the robots to return back to the starting point. The inbound and outbound paths should be at least 1 meter apart (TODO: determine the exact minimum distance), so that the robots won't obstruct each other. On both ends of the path, markers should be arranged in a specific way, shown in the image bellow.
-When setting up a route, the measurements from the image bellow need to be considered (TODO: test extensively if the measurements in the image are actually correct and update the values if necessary).
-If you want to include a STOP marker into the Circuit route, the best way of placing it is one meter behind the GO marker. GO markers must be max 4-5 meters apart regardless of where you put the STOP markers, because you might want to ignore the STOP marker in the case if you don't want the robot to stop on it.
+If you want multiple robots to drive on the same marker setup, you should arrange the markers in a so-called "Circuit route", so that the robots won't collide into each other. This type of marker setup is recommended even if you have only one robot, because you never know when you will add another robot to your fleet. We divide circuit route into an inbound and an outbound path. Inbound serves as the path for robots to drive to the goal and the outbound is the path which is used for the robots to return back to the starting point. The inbound and outbound paths should be at a little more (about 20 cm more) than 1 robot width apart, so that the robots can pass each other without collision. If you have space, its convienient to place the routes 1 meter apart. On both ends of the path, markers should be arranged in a specific way, shown in the image bellow.
+When setting up a route, the measurements from the image bellow need to be considered.
+If you want to include a STOP marker into the Circuit route, the best way of placing it is one meter behind the GO marker. GO markers must be max 4-5 meters apart regardless of where you put the STOP markers, because the STOP markers are ignored in the case if you don't want the robot to stop on them.
 As seen from the image, on each end of the Circuit route, there is a TURN marker, which you need to include into the route on the touchscreen. This can't be a GO marker, because it would be ignored as it is turned in opposite direction as the robot's driving direction.
 
 <img src="ConveyorBot/assets/Map_example_circuit.png" >
 
 ### Branches from main circuit route
 
-TODO: Desribe this after collision avoidance when returning on the main route from a branch is done.
+You can also do "branches" from the main circular route similarly as shown on the image bellow.
+
+<img src="ConveyorBot/assets/circuit_branch.png" >
+
+As you can see, there is a possibility that two robots would collide into each other on the marker where the branch merges back into the main route. This is handeled in a way that the robot comming from the branch always "looks" to the left with LIDAR in order to see if there is another robot approaching from the main route. If this is the case, the robot approaching from the branch will stop and wait for the robot on the main route to pass. 
+But this introduces a problem. The robots **always** look to the left when turning right on a marker in order to detect a potential robot on the main route. This means that if the robot is just turning right (and it is not going back to the main route), ideally there should also be about two meters of clearance on the left side of the robot so that the wall or any other obstacle is not detected as the robot approaching from the main route. So, if the robot is driving in a hallway which is turning right, you should put the inbound path as close to the right wall as needed so that there is still 2 meters of clearance on the left side of the robot.
+Bear in mind that to rejoin the main route at the point where the main route makes a 90 degree turn will create problems with this collision avoidance. Please rejoin the main route a few cm earlier than where the main route takes a 90 degree turn.
