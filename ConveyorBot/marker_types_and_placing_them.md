@@ -63,4 +63,6 @@ Bear in mind that to rejoin the main route at the point where the main route mak
 
 ## Narrow hallway limitations
 
+There are some minimum distances from the route to walls which are presented on the image bellow.
+
 <img src="ConveyorBot/assets/narrow_hallway_limitation.png" >
