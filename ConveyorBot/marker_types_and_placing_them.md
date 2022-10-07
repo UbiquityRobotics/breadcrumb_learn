@@ -57,5 +57,12 @@ You can also do "branches" from the main circular route similarly as shown on th
 <img src="ConveyorBot/assets/circuit_branch.png" >
 
 As you can see, there is a possibility that two robots would collide into each other on the marker where the branch merges back into the main route. This is handeled in a way that the robot comming from the branch always "looks" to the left with LIDAR in order to see if there is another robot approaching from the main route. If this is the case, the robot approaching from the branch will stop and wait for the robot on the main route to pass. 
-But this introduces a problem. The robots **always** look to the left when turning right on a marker in order to detect a potential robot on the main route. This means that if the robot is just turning right (and it is not going back to the main route), ideally there should also be about two meters of clearance on the left side of the robot so that the wall or any other obstacle is not detected as the robot approaching from the main route. So, if the robot is driving in a hallway which is turning right, you should put the inbound path as close to the right wall as needed so that there is still 2 meters of clearance on the left side of the robot.
+
+But this introduces a problem. The robots **always** look to the left when turning right on a marker in order to detect a potential robot on the main route. This means that if the robot is just turning right (and it is not going back to the main route), ideally there should also be about two meters of clearance on the left side of the robot so that the wall or any other obstacle is not detected as the robot approaching from the main route. So, if the robot is driving in a hallway which is turning right, you should put the inbound path as close to the right wall as needed so that there is still 2 meters of clearance on the left side of the robot. Or, if that's not possible, you should disable t collision detection for each individual marker, that makes the robot turn right, on which you don't want the robot to stop because of the obstacle on the left. This can be done on the touchscreen's route settings screen. By clicking on any marker in the route, a popup will open where you can check the "Disable T collision check" checkbox.
 Bear in mind that to rejoin the main route at the point where the main route makes a 90 degree turn will create problems with this collision avoidance. Please rejoin the main route a few cm earlier than where the main route takes a 90 degree turn.
+
+## Narrow hallway limitations
+
+There are some minimum distances from the route to walls which are presented on the image bellow.
+
+<img src="ConveyorBot/assets/narrow_hallway_limitation.png" >
