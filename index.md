@@ -5,7 +5,9 @@ title:  "Main Menu"
 
 # ConveyorBot Documentation
 
-<H4 style="color:red">This set of docs is now deprecated and is no longer being maintained. New site can be found here: https://learn.ubiquityrobotics.com/noetic_conveyorbot_intro.</H4>
+<H4 style="color:red">This set of docs is now deprecated and is no longer being maintained. :</H4>
+
+[New documentation can be found here.](https://learn.ubiquityrobotics.com/noetic_conveyorbot_intro)
 
 <br>
 
