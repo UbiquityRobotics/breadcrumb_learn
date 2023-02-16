@@ -5,14 +5,8 @@ title:  "Main Menu"
 
 # ConveyorBot Documentation
 
-<!--
-<H3 style="color:red">Warning</H3>
+<H4 style="color:red">This set of docs is now deprecated and is no longer being maintained. New site can be found here: https://learn.ubiquityrobotics.com/noetic_conveyorbot_intro.</H4>
 
-The ConveyorBot robot is strong, fast, and heavy. Initially, use lumber, bricks, or whatever you have to lift the wheels free of the floor, or run it somewhere where it can't hurt anyone or anything if it surprises you. NOT ON A TABLE TOP.
-
-<H4 style="color:red">Always remove the red battery cable for any work on boards to remove live voltage from the main board</H4>
-
--->
 <br>
 
 #### High Level Overviews
